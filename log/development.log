@@ -1229,3 +1229,151 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 7
 ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
   
 app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 11:55:41 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1326)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3847)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.4ms | Allocations: 4880)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 11:55:41 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2757)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3090)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 11:55:44 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2965)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 3356)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 11:55:50 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"dfv", "chernovik"=>"dsfg", "opisanie"=>"s"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 741)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 11:55:51 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 543)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2767)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 3104)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 11:55:51 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2765)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 3097)
+
+
+Started GET "/tamplates/show" for 127.0.0.1 at 2022-05-04 11:56:01 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:33:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 908)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Tamplate with 'id'=show):
+  
+app/controllers/tamplates_controller.rb:33:in `show'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 11:56:29 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 543)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2773)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 3107)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 11:56:31 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2665)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3003)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 11:56:35 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sfgs", "chernovik"=>"sds", "opisanie"=>"cvs"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 757)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 11:58:28 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 741)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3264)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 4297)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 11:58:28 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2769)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3102)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 11:58:29 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1132)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3177)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3568)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 11:58:35 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>" z", "chernovik"=>"zxc z", "opisanie"=>"zx z", "types"=>"zxz"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 741)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:5:in `create'

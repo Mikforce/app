@@ -1,5 +1,9 @@
 <h1>Prog</h1>
-1231231
-<% @tamplates.each do |tamplate| %>
-  <p>name <%= tamplate.id %></p>
-<% end %>
+<p><%= @tamplate.name %></p>
+<p>user_id: <b><%= @template.user_id %></b></p>
+
+<p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+<div>
+  <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+</div>
+<p><%= link_to "Все клиенты", tamplate_path %></p>
