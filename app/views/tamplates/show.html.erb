@@ -1,7 +1,12 @@
-<h1>Prog</h1>
-<p><%= @tamplate.name %></p>
-<p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
-<div>
-  <%= button_to "удалить клиента", tamplate_path(@tamplate), method: :delete %>
+<div class="container">
+  <h2 class="title-lg mb">Шаблон <%= @tamplate.id %></h2>
+
+  <p class="mb-sm"><%= @tamplate.name %></p>
+
+  <div class="mt">
+    <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+  </div>
+
+  <p class="mt"><%= link_to "Все шаблоны", "/tamplates" %></p>
 </div>
-<p><%= link_to "Все клиенты", "/tamplates" %></p>

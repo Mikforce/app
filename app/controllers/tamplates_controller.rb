@@ -17,7 +17,7 @@ class TamplatesController < ApplicationController
   def destroy
     @tamplate.destroy
 
-    redirect_to tamplate_path(@tamplate)
+    redirect_to tamplates_path
   end
 
   def show
