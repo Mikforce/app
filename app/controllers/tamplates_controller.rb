@@ -17,7 +17,7 @@ class TamplatesController < ApplicationController
   def destroy
     @tamplate.destroy
 
-    redirect_to tamplate_path
+    redirect_to tamplate_path(@tamplate)
   end
 
   def show
@@ -42,7 +42,7 @@ class TamplatesController < ApplicationController
   end
 
   def set_tamplate
-    @tamplates = Tamplate.find(params[:id])
+    @tamplate = Tamplate.find(params[:id])
   end
 
 end

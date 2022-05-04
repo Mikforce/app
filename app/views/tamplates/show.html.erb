@@ -1,5 +1,5 @@
 <h1>Prog</h1>
-<p><%= @tamplate %></p>
+<p><%= @tamplate.name %></p>
 <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
 <div>
   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: :delete %>
