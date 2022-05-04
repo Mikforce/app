@@ -1,5 +1,7 @@
-<h1>zone</h1>
-123123
+<h1>МРТ</h1>
+
 <% @tamplates.each do |tamplate| %>
   <p>name <%= tamplate.id %></p>
 <% end %>
+
+<p><%= link_to "Новый пациент", new_tamplate_path %></p>
