@@ -2,7 +2,7 @@ class TamplatesController < ApplicationController
 
 
   def create
-    tamplate = Tamplate.create(
+    @tamplate = Tamplate.create(
       name: params[:tamplate][:name],
       chernovik: params[:tamplate][:chernovik],
       opisanie: params[:tamplate][:opisanie],
