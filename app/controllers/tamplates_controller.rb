@@ -1,36 +1,26 @@
 class TamplatesController < ApplicationController
-
+  before_action :set_tamplate, only: %i[update show destroy edit]
 
   def create
-    @tamplate = Tamplate.create(
-      name: params[:tamplate][:name],
-      chernovik: params[:tamplate][:chernovik],
-      opisanie: params[:tamplate][:opisanie],
-      types: params[:tamplate][:types],
-      koef: params[:tamplate][:koef]
-    )
+
+    tamplate = Tamplate.create(tamplate_params)
 
     redirect_to tamplate_path(tamplate)
   end
 
   def update
-    @tamplate = Tamplate.find(params[:id])
-    @tamplate.update(
-      name: params[:tamplate][:name],
-      chernovik: params[:tamplate][:chernovik],
-      opisanie: params[:tamplate][:opisanie],
-      types: params[:tamplate][:types],
-      koef: params[:tamplate][:koef]
-    )
+    @tamplate.update(tamplate_params)
+
+    redirect_to tamplate_path(@tamplate)
   end
 
-  def delete
-    @tamplate = Tamplate.find(params[:id])
+  def destroy
     @tamplate.destroy
+
+    redirect_to tamplate_path
   end
 
   def show
-    @tamplates = Tamplate.find(params[:id])
   end
 
   def index
@@ -42,6 +32,16 @@ class TamplatesController < ApplicationController
   end
 
   def edit
+
+  end
+
+  private
+
+  def tamplate_params
+    params.require(:tamplate).permit(:name, :chernovik, :opisanie, :types, :koef)
+  end
+
+  def set_tamplate
     @tamplates = Tamplate.find(params[:id])
   end
 

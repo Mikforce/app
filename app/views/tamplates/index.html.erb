@@ -1,7 +1,7 @@
 <h1>МРТ</h1>
 
 <% @tamplates.each do |tamplate| %>
-  <p>name <%= tamplate.id %></p>
+  <p><%= link_to "Имя #{tamplate.id}", tamplate_path(tamplate.id) %></p>
 <% end %>
 
 <p><%= link_to "Новый пациент", new_tamplate_path %></p>

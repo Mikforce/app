@@ -1,9 +1,7 @@
 <h1>Prog</h1>
-<p><%= @tamplate.name %></p>
-<p>user_id: <b><%= @template.user_id %></b></p>
-
+<p><%= @tamplate %></p>
 <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
 <div>
-  <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+  <%= button_to "удалить клиента", tamplate_path(@tamplate), method: :delete %>
 </div>
-<p><%= link_to "Все клиенты", tamplate_path %></p>
+<p><%= link_to "Все клиенты", "/tamplates" %></p>

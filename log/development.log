@@ -1463,3 +1463,1424 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 8
 ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
   
 app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 18:42:26 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 543)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2774)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 3110)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 18:42:26 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2769)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 3101)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 18:42:28 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 618)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2663)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3001)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 18:42:42 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"svs", "chernovik"=>"sdvs", "opisanie"=>"sdvs"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 745)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 18:54:12 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1128)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3357)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 3691)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 18:54:13 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2755)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3087)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 18:54:15 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 642)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2687)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3026)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 18:58:49 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"xfbx", "chernovik"=>"xbx", "opisanie"=>"x x"}, "commit"=>"Создать"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tamplates_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.1ms | Allocations: 3420)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 18:59:49 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1206)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 14536)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.5ms | Allocations: 15862)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 18:59:54 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 697)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2742)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 0.7ms | Allocations: 4659)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 18:59:56 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"cvbc", "chernovik"=>"cv c", "opisanie"=>"cv c"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 820)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:00:34 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 741)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3253)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 4286)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:00:34 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2762)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 3095)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:00:35 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 4700)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4778)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5131)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x00000000032168>
+Did you mean?  for
+               fork):
+    1: <h2>mrt</h2>
+    2: 
+    3: <%= form_with model: @tamplate do |create| %>
+    4: <p><%= form.label :name, 'Имя' %></p>
+    5: <p><%= form.text_area :name, rows: 1 %></p>
+    6: <p><%= form.label :chernovik, 'Чероновик' %></p>
+    7: <p><%= form.text_area :chernovik, rows: 1 %></p>
+  
+app/views/tamplates/new.html.erb:4
+app/views/tamplates/new.html.erb:3
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:00:49 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 926)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3265)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4298)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:01:23 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 932)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3255)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4288)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:01:32 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 745)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:5:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:19:31 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 14917)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 16526)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:19:31 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 543)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2748)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 3079)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:19:32 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 945)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2990)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4557)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:19:35 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sdfsd", "chernovik"=>"sdvs", "opisanie"=>"sdvs"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4021)
+
+
+  
+NoMethodError (undefined method `creat' for Tamplate:Class
+Did you mean?  create
+               create!):
+  
+app/controllers/tamplates_controller.rb:6:in `create'
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:20:01 +0300
+Processing by TamplatesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tamplates_controller.rb:32:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 693)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 13845)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.8ms | Allocations: 17247)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:20:03 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (144.0ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:20:03.398031"], ["updated_at", "2022-05-04 16:20:03.398031"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (131.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/1
+Completed 302 Found in 283ms (ActiveRecord: 275.8ms | Allocations: 3165)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-04 19:20:03 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1510)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1588)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 3086)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:21:09 +0300
+Processing by TamplatesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tamplates_controller.rb:32:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 689)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 13842)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 0.8ms | Allocations: 17242)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:21:11 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.3ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:21:11.347775"], ["updated_at", "2022-05-04 16:21:11.347775"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (180.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 180.5ms | Allocations: 5140)
+
+
+  
+NameError (undefined local variable or method `tamplate' for #<TamplatesController:0x0000000003ef80>
+Did you mean?  @tamplate):
+  
+app/controllers/tamplates_controller.rb:8:in `create'
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:21:28 +0300
+Processing by TamplatesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tamplates_controller.rb:32:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 703)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 13855)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.8ms | Allocations: 17255)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:21:30 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.4ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:21:30.206543"], ["updated_at", "2022-05-04 16:21:30.206543"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (240.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/3
+Completed 302 Found in 247ms (ActiveRecord: 240.6ms | Allocations: 2231)
+
+
+Started GET "/tamplates/3" for 127.0.0.1 at 2022-05-04 19:21:30 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1308)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1386)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 2772)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:21:47 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 935)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3274)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4307)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:21:49 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.2ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:21:49.237725"], ["updated_at", "2022-05-04 16:21:49.237725"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (247.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/4
+Completed 302 Found in 253ms (ActiveRecord: 247.5ms | Allocations: 2142)
+
+
+Started GET "/tamplates/4" for 127.0.0.1 at 2022-05-04 19:21:49 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4381)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4459)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 5299)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x00000000043a80>
+Did you mean?  @tamplates):
+    1: <h1>Prog</h1>
+    2: <p><%= tamplate.name %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:22:03 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3275)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 4307)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:22:04 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.5ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:22:04.366666"], ["updated_at", "2022-05-04 16:22:04.366666"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (228.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/5
+Completed 302 Found in 235ms (ActiveRecord: 228.9ms | Allocations: 2157)
+
+
+Started GET "/tamplates/5" for 127.0.0.1 at 2022-05-04 19:22:04 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4380)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4458)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 5298)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x00000000043e18>
+Did you mean?  @tamplates):
+    1: <h1>Prog</h1>
+    2: <p><%= tamplate.name %></p>
+    3: <p>user_id: <b><%= template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:23:00 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3281)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4313)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:23:02 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.2ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:23:02.071546"], ["updated_at", "2022-05-04 16:23:02.071546"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (345.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/6
+Completed 302 Found in 352ms (ActiveRecord: 345.8ms | Allocations: 2140)
+
+
+Started GET "/tamplates/6" for 127.0.0.1 at 2022-05-04 19:23:02 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1567)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1645)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2485)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:23:14 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3275)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4308)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:23:16 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.4ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:23:16.269356"], ["updated_at", "2022-05-04 16:23:16.269356"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (246.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/7
+Completed 302 Found in 253ms (ActiveRecord: 246.6ms | Allocations: 2136)
+
+
+Started GET "/tamplates/7" for 127.0.0.1 at 2022-05-04 19:23:16 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1571)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1649)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2489)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:23:37 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 930)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3269)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4301)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:23:38 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.3ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:23:38.340372"], ["updated_at", "2022-05-04 16:23:38.340372"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (270.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/8
+Completed 302 Found in 276ms (ActiveRecord: 270.4ms | Allocations: 2138)
+
+
+Started GET "/tamplates/8" for 127.0.0.1 at 2022-05-04 19:23:38 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"8"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1262)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1340)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2182)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    2: <p><%= @tamplate %></p>
+    3: <p>user_id: <b><%= @template %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+    7:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    8: </div>
+  
+app/views/tamplates/show.html.erb:5
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:24:12 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 931)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3270)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4303)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:24:18 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"sccssssssssssssssssssssssssss", "chernovik"=>"cczc", "opisanie"=>"sczcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.6ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sccssssssssssssssssssssssssss"], ["chernovik", "cczc"], ["opisanie", "sczcz"], ["created_at", "2022-05-04 16:24:18.801448"], ["updated_at", "2022-05-04 16:24:18.801448"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (196.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/9
+Completed 302 Found in 203ms (ActiveRecord: 196.6ms | Allocations: 2152)
+
+
+Started GET "/tamplates/9" for 127.0.0.1 at 2022-05-04 19:24:19 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"9"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1567)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1645)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2485)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:31:10 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2711)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 16038)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 17472)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:31:10 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2887)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 3219)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:31:11 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2731)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3077)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:31:12 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 685)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2909)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 3246)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:31:16 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 616)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2661)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3000)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:31:18 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"csdc", "chernovik"=>"scdvszc", "opisanie"=>"zdcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.3ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "csdc"], ["chernovik", "scdvszc"], ["opisanie", "zdcz"], ["created_at", "2022-05-04 16:31:18.865347"], ["updated_at", "2022-05-04 16:31:18.865347"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (166.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/10
+Completed 302 Found in 174ms (ActiveRecord: 167.0ms | Allocations: 2230)
+
+
+Started GET "/tamplates/10" for 127.0.0.1 at 2022-05-04 19:31:19 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"10"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1312)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1390)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2728)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:31:38 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 698)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2939)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 3275)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:31:38 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 699)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2916)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 3249)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:32:44 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4912)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4991)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 5985)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `name' for #<ActionView::Base:0x00000000049458>):
+    1: <h1>МРТ</h1>
+    2: 
+    3: <% @tamplates.each do |tamplate| %>
+    4:   <p>name <%= name.id %></p>
+    5: <% end %>
+    6: 
+    7: <p><%= link_to "Новый пациент", new_tamplate_path %></p>
+  
+app/views/tamplates/index.html.erb:4
+app/views/tamplates/index.html.erb:3
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:32:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 896)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3410)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 4441)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:33:02 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 912)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2957)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3350)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:33:04 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"zczxcz", "chernovik"=>"zxcz", "opisanie"=>"czxcz"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.3ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "zczxcz"], ["chernovik", "zxcz"], ["opisanie", "czxcz"], ["created_at", "2022-05-04 16:33:04.970724"], ["updated_at", "2022-05-04 16:33:04.970724"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (193.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/11
+Completed 302 Found in 200ms (ActiveRecord: 193.6ms | Allocations: 2145)
+
+
+Started GET "/tamplates/11" for 127.0.0.1 at 2022-05-04 19:33:05 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"11"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1567)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1645)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2491)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:33:07 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2943)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3279)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:33:07 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 713)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2926)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 3259)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:33:09 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 713)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2922)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3255)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:33:34 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 911)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3409)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 4439)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:33:37 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 916)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2961)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3354)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:33:40 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"zxcz", "chernovik"=>"xc", "opisanie"=>"zxc"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.4ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "zxcz"], ["chernovik", "xc"], ["opisanie", "zxc"], ["created_at", "2022-05-04 16:33:40.023432"], ["updated_at", "2022-05-04 16:33:40.023432"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (184.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/12
+Completed 302 Found in 191ms (ActiveRecord: 184.6ms | Allocations: 2139)
+
+
+Started GET "/tamplates/12" for 127.0.0.1 at 2022-05-04 19:33:40 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1567)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1645)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2491)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p>user_id: <b><%= @template.user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:33:52 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 934)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3273)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4307)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:33:53 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"dbd", "chernovik"=>"dfgdfg", "opisanie"=>"dhgd"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.2ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dbd"], ["chernovik", "dfgdfg"], ["opisanie", "dhgd"], ["created_at", "2022-05-04 16:33:53.556838"], ["updated_at", "2022-05-04 16:33:53.556838"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (261.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/13
+Completed 302 Found in 268ms (ActiveRecord: 261.9ms | Allocations: 2143)
+
+
+Started GET "/tamplates/13" for 127.0.0.1 at 2022-05-04 19:33:53 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"13"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4296)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4374)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 5221)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_id' for #<ActionView::Base:0x0000000004a100>):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p>user_id: <b><%= user_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:34:28 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 930)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3269)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 4302)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:34:29 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"dbd", "chernovik"=>"dfgdfg", "opisanie"=>"dhgd"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.5ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dbd"], ["chernovik", "dfgdfg"], ["opisanie", "dhgd"], ["created_at", "2022-05-04 16:34:29.756159"], ["updated_at", "2022-05-04 16:34:29.756159"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (249.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/14
+Completed 302 Found in 256ms (ActiveRecord: 250.3ms | Allocations: 2141)
+
+
+Started GET "/tamplates/14" for 127.0.0.1 at 2022-05-04 19:34:30 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"14"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1567)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1645)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2492)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p>user_id: <b><%= @template.name %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:34:39 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3275)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 4309)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:34:40 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"dbd", "chernovik"=>"dfgdfg", "opisanie"=>"dhgd"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.3ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dbd"], ["chernovik", "dfgdfg"], ["opisanie", "dhgd"], ["created_at", "2022-05-04 16:34:40.086275"], ["updated_at", "2022-05-04 16:34:40.086275"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (245.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/15
+Completed 302 Found in 252ms (ActiveRecord: 245.9ms | Allocations: 2130)
+
+
+Started GET "/tamplates/15" for 127.0.0.1 at 2022-05-04 19:34:40 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"15"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1571)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1649)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2496)
+
+
+  
+ActionView::Template::Error (undefined method `name_id' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p>user_id: <b><%= @template.name_id %></b></p>
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:35:09 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 934)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3273)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4306)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:35:09 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"dbd", "chernovik"=>"dfgdfg", "opisanie"=>"dhgd"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.4ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dbd"], ["chernovik", "dfgdfg"], ["opisanie", "dhgd"], ["created_at", "2022-05-04 16:35:09.999553"], ["updated_at", "2022-05-04 16:35:09.999553"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (250.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/16
+Completed 302 Found in 257ms (ActiveRecord: 250.8ms | Allocations: 2137)
+
+
+Started GET "/tamplates/16" for 127.0.0.1 at 2022-05-04 19:35:10 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"16"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1235)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1313)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 2160)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    2: <p><%= @tamplate %></p>
+    3: 
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+    7:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    8: </div>
+  
+app/views/tamplates/show.html.erb:5
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:35:25 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 932)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3271)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 4304)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-04 19:35:27 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"name"=>"dbd", "chernovik"=>"dfgdfg", "opisanie"=>"dhgd"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.3ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dbd"], ["chernovik", "dfgdfg"], ["opisanie", "dhgd"], ["created_at", "2022-05-04 16:35:27.309809"], ["updated_at", "2022-05-04 16:35:27.309809"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (262.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/17
+Completed 302 Found in 269ms (ActiveRecord: 263.1ms | Allocations: 2142)
+
+
+Started GET "/tamplates/17" for 127.0.0.1 at 2022-05-04 19:35:27 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"17"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 10.1ms | Allocations: 4369)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4447)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 5294)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x0000000004af88>
+Did you mean?  @tamplates):
+    2: <p><%= @tamplate %></p>
+    3: 
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(tamplate) %></p>
+    6: <div>
+    7:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    8: </div>
+  
+app/views/tamplates/show.html.erb:5
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:35:46 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 949)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3288)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 4322)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:35:48 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 981)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3194)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 3584)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:45:08 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1774)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4268)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 5296)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-04 19:45:09 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.5ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1231)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1309)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 2123)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    2: <p><%= @tamplate %></p>
+    3: 
+    4: 
+    5: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    6: <div>
+    7:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    8: </div>
+  
+app/views/tamplates/show.html.erb:5
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-04 19:47:40 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1634)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3073)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-04 19:47:53 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1634)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 3074)
+
+
+  
+ActionView::Template::Error (undefined method `name_id' for nil:NilClass):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate.name_id %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+  
+app/views/tamplates/show.html.erb:2
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-04 19:48:00 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1236)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1315)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 2755)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    6: </div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-04 19:50:07 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1239)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1318)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2758)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    6: </div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:52:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1650)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4156)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 5186)
+
+
+Started GET "/tamplates/3" for 127.0.0.1 at 2022-05-04 19:52:25 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1229)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1307)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 2103)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    6: </div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:53:22 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1354)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3868)
+Completed 200 OK in 41ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 4897)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:53:26 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 27.8ms | Allocations: 1153)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 3358)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.3ms | Allocations: 3691)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-04 19:53:27 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1229)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1307)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 2102)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: delete %>
+    6: </div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-04 19:54:54 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2981)
+Completed 200 OK in 41ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 3376)
+
+
+Started GET "/tamplates/4" for 127.0.0.1 at 2022-05-04 19:57:51 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1238)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1317)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 2756)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: :delete %>
+    6: </div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:58:29 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3581)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 17112)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 1.0ms | Allocations: 18542)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:58:30 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1153)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3374)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 3706)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-04 19:58:31 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 988)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1066)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 2400)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    1: <h1>Prog</h1>
+    2: <p><%= @tamplate %></p>
+    3: <p><%= link_to 'Изменить', edit_tamplate_path(@tamplate) %></p>
+    4: <div>
+    5:   <%= button_to "удалить клиента", tamplate_path(@tamplate), method: :delete %>
+    6: </div>
+  
+app/views/tamplates/show.html.erb:3
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-04 19:58:45 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:3
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3389)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 3721)
+
+
