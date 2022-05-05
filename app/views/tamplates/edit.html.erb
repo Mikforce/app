@@ -1,12 +1,12 @@
 <div class="container">
-  <h2 class="title-lg mb">Редактирование пациента <%= @tamplate.id %> </h2>
+  <h2 class="title-lg mb">Редактирование шаблона<%= @tamplate.id %> </h2>
 
   <%= form_with model: @tamplate do |form| %>
-  <p><%= form.label :type, 'Тип' %></p>
-  <p><%= form.number_field :type, rows: 1 %></p>
+  <p><%= form.label :templ_type, 'Тип' %></p>
+  <p><%= form.number_field :templ_type %></p>
 
   <p><%= form.label :koef, 'Коф.' %></p>
-  <p><%= form.number_field :koef, rows: 1 %></p>
+  <p><%= form.number_field :koef %></p>
 
   <p><%= form.label :name, 'Имя' %></p>
   <p><%= form.text_area :name, rows: 1, class: 'form-text-area' %></p>
