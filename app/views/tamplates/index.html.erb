@@ -14,10 +14,10 @@
   <% end %>-->
 
   <table>
-    <tr><th>Имя</th><th>Коэф</th><th>Изменить</th><th>Удалить</th></tr>
+    <tr><th>Имя</th><th>Тип</th><th>Коэф</th><th>Изменить</th><th>Удалить</th></tr>
     <% @tamplates.each do |tamplate| %>
 
-     <tr><td><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></td><td><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></td><td><%= link_to fa_icon('pencil'),  tamplate_path(tamplate.id), class: 'button button-main' %></td><td><%= button_to fa_icon('trash-o'),  tamplate_path(tamplate.id), class: 'button button-main', method: :delete %></td></tr>
+     <tr><td><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></td><td><%= link_to "#{tamplate.templ_type}",  tamplate_path(tamplate.id) %></td><td><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></td><td><%= link_to fa_icon('pencil'),  tamplate_path(tamplate.id), class: 'button button-main' %></td><td><%= button_to fa_icon('trash-o'),  tamplate_path(tamplate.id), class: 'button button-main', method: :delete %></td></tr>
      <% end %>
     </table>
 
