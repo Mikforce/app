@@ -38,7 +38,7 @@ class TamplatesController < ApplicationController
   private
 
   def tamplate_params
-    params.require(:tamplate).permit(:name, :chernovik, :opisanie, :types, :koef)
+    params.require(:tamplate).permit(:types, :koef, :name, :chernovik, :opisanie)
   end
 
   def set_tamplate
