@@ -2,7 +2,7 @@
   <h1 class="title-lg mb">МРТ</h1>
 
   <% @tamplates.each do |tamplate| %>
-    <p class="mb-sm"><%= link_to "Имя #{tamplate.id}", tamplate_path(tamplate.id) %></p>
+    <p class="mb-sm"><%= link_to "#{tamplate.name}", tamplate_path(tamplate.id) %></p>
   <% end %>
 
   <p class="mt">
