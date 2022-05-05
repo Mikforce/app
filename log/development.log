@@ -8190,3 +8190,3044 @@ Processing by TamplatesController#index as HTML
 Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 4973)
 
 
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:45:42 +0300
+  [1m[35m (12.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 75.6ms | Allocations: 7168)
+  Rendered layout layouts/application.html.erb (Duration: 1174.3ms | Allocations: 49464)
+Completed 200 OK in 1350ms (Views: 1245.5ms | ActiveRecord: 1.3ms | Allocations: 55324)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:47:59 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 35.5ms | Allocations: 5410)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 5491)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 6513)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h1 class="title-lg mb">МРТ</h1>
+
+  <% @tamplates.each do |tamplate| %>
+    <p class="mb-sm"><%= link_to "#{tamplate.name}", link_to "#{tamplate.name}", tamplate_path(tamplate.id) %></p>
+  <% end %>
+
+  <p class="mt">
+    <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  </p>
+</div>
+
+):
+1:    <div class="container">
+2:      <h1 class="title-lg mb">МРТ</h1>
+3:    
+4:      <% @tamplates.each do |tamplate| %>
+5:        <p class="mb-sm"><%= link_to "#{tamplate.name}", link_to "#{tamplate.name}", tamplate_path(tamplate.id) %></p>
+6:      <% end %>
+7:    
+8:      <p class="mt">
+9:        <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+10:      </p>
+11:    </div>
+  
+app/views/tamplates/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 11:48:15 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 723)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4846)
+Completed 200 OK in 84ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 8247)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:48:21 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 839)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4855)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5247)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:48:35 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 956)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5261)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 6292)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:49:14 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5257)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 6298)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:50:34 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2099)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2178)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3178)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    10:   <% end %>
+    11: 
+    12:   <% @tamplates.each do |tamplate| %>
+    13:   <p<%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%></p>
+    14:   <% end %>
+    15: 
+    16:   <p class="mt">
+  
+app/views/tamplates/index.html.erb:13
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:51:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2105)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2185)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3190)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    11: 
+    12:   <% @tamplates.each do |tamplate| %>
+    13:     <p class="mb-sm">
+    14:       <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    15:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    16:     </p>
+    17:   <% end %>
+  
+app/views/tamplates/index.html.erb:14
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:52:15 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2672)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2751)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3747)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    12:   <% @tamplates.each do |tamplate| %>
+    13:     <p class="mb-sm">
+    14:       <%= link_to fa_icon('pencil'), title: 'Изменить шаблон'%>
+    15:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    16:     </p>
+    17:   <% end %>
+    18: 
+  
+app/views/tamplates/index.html.erb:15
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:52:26 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1854)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 5983)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms | Allocations: 7015)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:53:32 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1851)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5970)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 7002)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:53:38 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1447)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5286)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 5620)
+
+
+Started POST "/?method=delete&title=%D0%A3%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD" for 127.0.0.1 at 2022-05-05 11:53:45 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:53:45 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1441)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5279)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5611)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 11:53:48 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4482)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5314)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:54:33 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1446)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5284)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 5616)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:56:29 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2230)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2309)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3304)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+    11: 
+    12:   <% @tamplates.each do |tamplate| %>
+    13:     <p class="mb-sm">
+    14:       <%= link_to fa_icon('pencil'), edit_tamplate_path, title: 'Изменить шаблон'%>
+    15:       <%= button_to fa_icon('trash-o'), method: :delete, title: 'Удалить шаблон' %>
+    16:     </p>
+    17:   <% end %>
+  
+app/views/tamplates/index.html.erb:14
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:57:04 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2199)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2278)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3274)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+    11: 
+    12:   <% @tamplates.each do |tamplate| %>
+    13:     <p class="mb-sm">
+    14:       <%= link_to fa_icon('pencil'), edit_tamplate_path, class: 'button button-main'%>
+    15:       <%= button_to fa_icon('trash-o'), method: :delete, title: 'Удалить шаблон' %>
+    16:     </p>
+    17:   <% end %>
+  
+app/views/tamplates/index.html.erb:14
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:57:27 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1688)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5817)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 6848)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:58:00 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1682)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5801)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 6832)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 11:58:01 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 237.1ms | Allocations: 5468)
+  Rendered layout layouts/application.html.erb (Duration: 246.1ms | Allocations: 9306)
+Completed 200 OK in 248ms (Views: 246.8ms | ActiveRecord: 0.0ms | Allocations: 9726)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:58:21 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2165)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2244)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3239)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+    11: 
+    12:   <% @tamplates.each do |tamplate| %>
+    13:     <p class="mb-sm">
+    14:       <%= link_to "Редактировать", edit_tamplate_path, class: 'button button-main' %>
+    15:       <%= button_to fa_icon('trash-o'), method: :delete, title: 'Удалить шаблон' %>
+    16:     </p>
+    17:   <% end %>
+  
+app/views/tamplates/index.html.erb:14
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:59:53 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1749)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5878)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms | Allocations: 6910)
+
+
+Started POST "/?method=delete&title=%D0%A3%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD" for 127.0.0.1 at 2022-05-05 11:59:56 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 11:59:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1345)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 5183)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5516)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:00:54 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2473)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2552)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3549)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    11: 
+    12: 
+    13:   <<div class="container">
+    14:     <h2 class="title-lg mb">Шаблон <%= @tamplate.id %></h2>
+    15: 
+    16:     <p class="mb-sm"><%= @tamplate.name %></p>
+    17: 
+  
+app/views/tamplates/index.html.erb:14
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:01:21 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2392)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2471)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3467)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    13:   <<div class="container">
+    14:     <h2 class="title-lg mb">Шаблон </h2>
+    15: 
+    16:     <p class="mb-sm"><%= @tamplate.name %></p>
+    17: 
+    18:     <div class="mt">
+    19:       <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+  
+app/views/tamplates/index.html.erb:16
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:01:39 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2073)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2152)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 3148)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    14:     <h2 class="title-lg mb">Шаблон </h2>
+    15: 
+    16:     <div class="mt">
+    17:       <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:02:16 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 958)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5267)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 6298)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:03:04 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2014)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2093)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3089)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+     9:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+    10:   <% end %>
+    11: 
+    12:   <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    13: 
+    14:   <p class="mt">
+    15:     <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:04:09 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1252)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1332)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2329)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h1 class="title-lg mb">МРТ шаблон</h1>
+
+  <% @tamplates.each do |tamplate| %>
+    <p class="mb-sm"><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></p>
+  <% end %>
+
+  <% @tamplates.each do |tamplate| %>
+    <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+  <% end %>
+
+  <%= link_to fa_icon('pencil'), link_to "#{tamplate.edit}", title: 'Изменить шаблон'%>
+
+  <p class="mt">
+    <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  </p>
+</div>
+
+):
+1:    <div class="container">
+2:      <h1 class="title-lg mb">МРТ шаблон</h1>
+3:    
+4:      <% @tamplates.each do |tamplate| %>
+5:        <p class="mb-sm"><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></p>
+6:      <% end %>
+7:    
+8:      <% @tamplates.each do |tamplate| %>
+9:        <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+10:      <% end %>
+11:    
+12:      <%= link_to fa_icon('pencil'), link_to "#{tamplate.edit}", title: 'Изменить шаблон'%>
+13:    
+14:      <p class="mt">
+15:        <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+16:      </p>
+17:    </div>
+  
+app/views/tamplates/index.html.erb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/tamplates/index.html.erb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/tamplates/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:04:28 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 5166)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5245)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms | Allocations: 6243)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x0000000000ec18>
+Did you mean?  @tamplates):
+     9:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+    10:   <% end %>
+    11: 
+    12:   <%= link_to "#{tamplate.edit}", title: 'Изменить шаблон'%>
+    13: 
+    14:   <p class="mt">
+    15:     <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:04:45 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 5146)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5225)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms | Allocations: 6221)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit' for #<ActionView::Base:0x0000000000ef10>
+Did you mean?  exit):
+     9:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+    10:   <% end %>
+    11: 
+    12:   <%= link_to "#{edit}", title: 'Изменить шаблон'%>
+    13: 
+    14:   <p class="mt">
+    15:     <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:04:55 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1071)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5382)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 6414)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:05:01 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 756)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4757)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 5094)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:05:28 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2082)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2161)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3156)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+     9:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+    10:   <% end %>
+    11: 
+    12:   <%= link_to "#{edit_tamplate_path}", title: 'Изменить шаблон'%>
+    13: 
+    14:   <p class="mt">
+    15:     <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:06:23 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1779)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1857)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2155)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+     9:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+    10:   <% end %>
+    11: 
+    12:   <%= link_to "#{edit_tamplate_path}", title: 'Изменить шаблон'%>
+    13: 
+    14:   <p class="mt">
+    15:     <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:06:28 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5258)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 6289)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:07:10 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2389)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2468)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3464)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     9:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+    10:   <% end %>
+    11: 
+    12:   <div class="mt" <%= @tamplate.id %>>
+    13:     <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    14:     <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    15:   </div>
+  
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:08:10 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2020)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2099)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3095)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    11: 
+    12:   <div class="mt">
+    13:     
+    14:     <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    15:   </div>
+    16: 
+    17:   <p class="mt">
+  
+app/views/tamplates/index.html.erb:14
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:08:39 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2066)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2145)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3141)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+    14:     <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    15:   </div>
+    16: 
+    17:   <p class="mt">
+  
+app/views/tamplates/index.html.erb:14
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:08:47 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1012)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5317)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 6349)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 12:08:49 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5030)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 5425)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 12:09:13 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4797)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 6276)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:09:15 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1963)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2041)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2392)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to "Новый шаблон", edit_tamplate_path(@tamplate), class: 'button button-main' %>
+    14: 
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:09:34 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2356)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2435)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3430)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to "Новый шаблон", edit_tamplate_path(@tamplate.id), class: 'button button-main' %>
+    14: 
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:09:53 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2090)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2169)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3165)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to "Новый шаблон", edit_tamplate_path, class: 'button button-main' %>
+    14: 
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 12:11:45 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 690)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4811)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 6287)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:11:47 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1994)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2072)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2423)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    14: 
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:12:40 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1059)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5358)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 6389)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:13:21 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1092)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 5385)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.1ms | Allocations: 6417)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:14:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 5201)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5280)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms | Allocations: 6276)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit' for #<ActionView::Base:0x000000000110d0>
+Did you mean?  exit):
+    10:   <% end %>
+    11: 
+    12:   <% @tamplates.each do |tamplate| %>
+    13:     <p class="mb-sm"><%= link_to "#{tamplate/edit}",  tamplate_path(tamplate.id) %></p>
+    14:   <% end %>
+    15: 
+    16:   <p class="mt">
+  
+app/views/tamplates/index.html.erb:13
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:14:42 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 5200)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5279)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 6275)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit' for #<ActionView::Base:0x000000000113c8>
+Did you mean?  exit):
+    10:   <% end %>
+    11: 
+    12:   <% @tamplates.each do |tamplate| %>
+    13:     <p class="mb-sm"><%= link_to "#{edit}",  tamplate_path(tamplate.id) %></p>
+    14:   <% end %>
+    15: 
+    16:   <p class="mt">
+  
+app/views/tamplates/index.html.erb:13
+app/views/tamplates/index.html.erb:12
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:17:40 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2039)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2118)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 3114)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    14:     <%= button_to 'Удалить', tamplate_path(@tamplate), method: :delete %>
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:18:33 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2000)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2079)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3075)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to 'Изменить', edit_tamplate_path(@tamplate) %>
+    14:     <%= button_to 'Удалить', tamplate_path(@tamplate), method: :delete %>
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:18:36 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1675)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1753)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2051)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to 'Изменить', edit_tamplate_path(@tamplate) %>
+    14:     <%= button_to 'Удалить', tamplate_path(@tamplate), method: :delete %>
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:20:15 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 5163)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5242)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms | Allocations: 6237)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x00000000011f80>
+Did you mean?  @tamplates):
+    10:   <% end %>
+    11: 
+    12:   <div class="mt">
+    13:     <%= link_to 'Изменить', edit_tamplate_path(tamplate.id) %>
+    14:     <%= button_to 'Удалить', tamplate_path(tamplate.id), method: :delete %>
+    15:   </div>
+    16: 
+  
+app/views/tamplates/index.html.erb:13
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:21:21 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 959)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 5349)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 6381)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:21:42 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1256)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1336)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2333)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h1 class="title-lg mb">МРТ шаблон</h1>
+
+  <% @tamplates.each do |tamplate| %>
+    <p class="mb-sm"><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></p>
+    <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+  <% end %>
+  <% end %>
+
+  <% @tamplates.each do |tamplate| %>
+    <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+  <% end %>
+
+
+  <p class="mt">
+    <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+  </p>
+</div>
+
+):
+1:    <div class="container">
+2:      <h1 class="title-lg mb">МРТ шаблон</h1>
+3:    
+4:      <% @tamplates.each do |tamplate| %>
+5:        <p class="mb-sm"><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></p>
+6:        <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+7:      <% end %>
+8:      <% end %>
+9:    
+10:      <% @tamplates.each do |tamplate| %>
+11:        <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+12:      <% end %>
+13:    
+14:    
+15:      <p class="mt">
+16:        <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
+17:      </p>
+18:    </div>
+  
+app/views/tamplates/index.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tamplates/index.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tamplates/index.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tamplates/index.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tamplates/index.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tamplates/index.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 12:21:54 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 692)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4900)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 6376)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:21:54 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1001)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4999)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 5389)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:22:05 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1021)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5326)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 6357)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:22:07 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 720)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4732)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5066)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:22:08 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 720)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4826)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 5160)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:22:27 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5256)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 6287)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:22:29 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.4ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4482)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.4ms | Allocations: 5317)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 12:22:32 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 447)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4277)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 5058)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-05 12:22:35 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 5073)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 5908)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:22:46 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4261)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 5042)
+
+
+Started GET "/tamplates/1/edit" for 127.0.0.1 at 2022-05-05 12:22:47 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 854)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4684)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 5465)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:23:54 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 423)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4253)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 5034)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:27:49 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2439)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2518)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3513)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    11: 
+    12: 
+    13:   <div class="container">
+    14:     <h2 class="title-lg mb">Шаблон <%= @tamplate.id %></h2>
+    15: 
+    16:     <p class="mb-sm"><%= @tamplate.name %></p>
+    17: 
+  
+app/views/tamplates/index.html.erb:14
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:28:26 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2393)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2472)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3468)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    13:   <div class="container">
+    14:     <h2 class="title-lg mb">Шаблон</h2>
+    15: 
+    16:     <p class="mb-sm"><%= @tamplate.name %></p>
+    17: 
+    18:     <div class="mt">
+    19:       <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+  
+app/views/tamplates/index.html.erb:16
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:28:39 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2074)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2154)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 3150)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    14:     <h2 class="title-lg mb">Шаблон</h2>
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:28:53 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2178)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2257)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3253)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+    14:     <h2 class="title-lg mb">Шаблон</h2>
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to fa_icon('pencil'), edit_tamplate_path, title: 'Изменить шаблон'%>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:29:54 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 5234)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5313)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms | Allocations: 6309)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x00000000013600>
+Did you mean?  @tamplates):
+    14:     <h2 class="title-lg mb">Шаблон</h2>
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to fa_icon('pencil'), tamplate_path(tamplate.id) %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:30:31 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 5198)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5277)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms | Allocations: 6273)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x00000000013920>
+Did you mean?  @tamplates):
+    14:     <h2 class="title-lg mb">Шаблон</h2>
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to fa_icon 'delete', tamplate_path(tamplate.id) %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:31:14 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2032)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2111)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3107)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    14:     <h2 class="title-lg mb">Шаблон</h2>
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to fa_icon 'delete', tamplate_path(@tamplate) %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:32:01 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1969)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2048)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3046)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 0..2)):
+    14:     <h2 class="title-lg mb">Шаблон</h2>
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to fa_icon 'delete', new_tamplate_path, class: 'button button-main' %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:32:35 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2097)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2176)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 3172)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to 'delete', new_tamplate_path, class: 'button button-main' %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+    21:     <p class="mt"><%= link_to "Все шаблоны", "/tamplates" %></p>
+  
+app/views/tamplates/index.html.erb:18
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:33:32 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2098)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2177)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3173)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to 'Изменить', new_tamplate_path, class: 'button button-main' %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    19:     </div>
+    20: 
+    21:     <p class="mt"><%= link_to "Все шаблоны", "/tamplates" %></p>
+  
+app/views/tamplates/index.html.erb:18
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:34:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2096)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2175)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 3171)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to 'Изменить', new_tamplate_path, class: 'button button-main' %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete %>
+    19:     </div>
+    20: 
+    21:     <p class="mt"><%= link_to "Все шаблоны", "/tamplates" %></p>
+  
+app/views/tamplates/index.html.erb:18
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:34:39 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5262)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5341)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms | Allocations: 6337)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x00000000014b18>
+Did you mean?  @tamplates):
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to 'Изменить', new_tamplate_path, class: 'button button-main' %>
+    18:       <%= button_to fa_icon('trash-o'), tamplate_path(tamplate.id), method: :delete %>
+    19:     </div>
+    20: 
+    21:     <p class="mt"><%= link_to "Все шаблоны", "/tamplates" %></p>
+  
+app/views/tamplates/index.html.erb:18
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:34:48 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1056)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 5444)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 6476)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 12:34:50 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1205)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5043)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 5439)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:35:00 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1058)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5358)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 6389)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:35:15 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1029)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5322)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 6354)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:35:30 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2108)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2187)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3183)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+    14:     <h2 class="title-lg mb"></h2>
+    15: 
+    16:       <div class="mt">
+    17:       <%= link_to 'Изменить', edit_tamplate_path, class: 'button button-main' %>
+    18: 
+    19:     </div>
+    20: 
+  
+app/views/tamplates/index.html.erb:17
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:37:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1013)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5411)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 6443)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 12:37:26 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1202)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5040)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:37:52 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 5085)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5164)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.1ms | Allocations: 6159)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_tamplate_path' for #<ActionView::Base:0x00000000015388>
+Did you mean?  new_tamplate_path):
+    11: 
+    12: 
+    13:   <p class="mt">
+    14:     <%= link_to "Новый шаблон", show_tamplate_path, class: 'button button-main' %>
+    15:   </p>
+    16: 
+    17: 
+  
+app/views/tamplates/index.html.erb:14
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:38:11 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2092)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2171)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3167)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates"}, missing required keys: [:id]
+Did you mean?  edit_tamplate_url):
+    11: 
+    12: 
+    13:   <p class="mt">
+    14:     <%= link_to "Новый шаблон", edit_tamplate_path, class: 'button button-main' %>
+    15:   </p>
+    16: 
+    17: 
+  
+app/views/tamplates/index.html.erb:14
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:38:37 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 5150)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5229)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms | Allocations: 6226)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x000000000159a0>
+Did you mean?  @tamplates):
+    11: 
+    12: 
+    13:   <p class="mt">
+    14:     <%= link_to "Новый шаблон", edit_tamplate_path(tamplate.id), class: 'button button-main' %>
+    15:   </p>
+    16: 
+    17: 
+  
+app/views/tamplates/index.html.erb:14
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:39:08 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 963)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5361)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 6393)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:39:20 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1025)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5320)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms | Allocations: 6352)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:39:27 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5225)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 6257)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 12:39:31 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4482)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5317)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-05 12:39:32 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5080)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 5914)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:39:55 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1973)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2052)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3047)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+     5:     <p class="mb-sm"><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></p>
+     6:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+     7: 
+     8:     <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+     9:     <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    10:     
+    11:   <% end %>
+  
+app/views/tamplates/index.html.erb:8
+app/views/tamplates/index.html.erb:4
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:41:31 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 980)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5372)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 6404)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:41:34 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 656)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4486)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 5321)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 12:41:46 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 441)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4271)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5052)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:42:18 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1060)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5353)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 6384)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:42:39 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1060)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5361)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 6393)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:42:41 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 646)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4476)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5311)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:43:42 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1543)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 5683)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 6715)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:43:44 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 649)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4479)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5314)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 12:44:02 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5031)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 5425)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-05 12:44:19 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"8566", "koef"=>"86786", "name"=>"петя", "chernovik"=>"ваияаим", "opisanie"=>"асими с"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.4ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "templ_type", "koef", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "петя"], ["chernovik", "ваияаим"], ["opisanie", "асими с"], ["templ_type", 8566], ["koef", 86786], ["created_at", "2022-05-05 09:44:19.781533"], ["updated_at", "2022-05-05 09:44:19.781533"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (97.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/3
+Completed 302 Found in 106ms (ActiveRecord: 98.4ms | Allocations: 3242)
+
+
+Started GET "/tamplates/3" for 127.0.0.1 at 2022-05-05 12:44:19 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 449)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4279)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5110)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:44:21 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1464)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 5302)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 5638)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 12:44:25 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 809)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4647)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 4989)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-05 12:44:35 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"5464", "koef"=>"45745756", "name"=>"юра", "chernovik"=>"ывывмч", "opisanie"=>"мсмч"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.3ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "templ_type", "koef", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "юра"], ["chernovik", "ывывмч"], ["opisanie", "мсмч"], ["templ_type", 5464], ["koef", 45745756], ["created_at", "2022-05-05 09:44:35.434340"], ["updated_at", "2022-05-05 09:44:35.434340"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (112.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/4
+Completed 302 Found in 119ms (ActiveRecord: 112.6ms | Allocations: 2175)
+
+
+Started GET "/tamplates/4" for 127.0.0.1 at 2022-05-05 12:44:35 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4281)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5065)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:44:39 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1712)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5550)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 5886)
+
+
+Started GET "/tamplates/3" for 127.0.0.1 at 2022-05-05 12:44:49 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 423)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4253)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5034)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:45:59 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2346)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2425)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3420)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tamplates", :id=>nil}, missing required keys: [:id]):
+     6:     <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+     7:     <p class="mb-sm"><%= link_to "Изменить",  tamplate_path(tamplate.id) %></p>
+     8:     <p class="mb-sm"><%= button_to link_to "Удалить",  tamplate_path(tamplate.id), method: :delete %></p>
+     9:     <p class="mb-sm"><%= button_to link_to "Удалить", tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %></p>
+    10:   <% end %>
+    11: 
+    12: 
+  
+app/views/tamplates/index.html.erb:9
+app/views/tamplates/index.html.erb:4
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:46:15 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2716)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6933)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.1ms | Allocations: 7965)
+
+
+Started GET "/tamplates/3" for 127.0.0.1 at 2022-05-05 12:46:18 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4484)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5319)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:46:21 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 435)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4265)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5046)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:46:24 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 429)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4259)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5040)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:47:13 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2398)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 6236)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 6569)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:47:25 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2023)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 6143)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 7174)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:47:27 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 644)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4474)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 5309)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:47:44 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 6131)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms | Allocations: 7162)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:47:45 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 642)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4472)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 5307)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:48:06 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2019)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 6236)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms | Allocations: 7268)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:49:43 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2052)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6172)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms | Allocations: 7204)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:49:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2074)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6194)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 7226)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:50:01 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 659)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4489)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5324)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:50:04 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 435)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4265)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 5047)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:51:18 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2056)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6273)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 7304)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:51:38 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2060)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6180)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.1ms | Allocations: 7212)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:52:33 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1738)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5576)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5910)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:53:00 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2059)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6179)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 7210)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:53:47 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6182)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 7214)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:54:19 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2071)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6191)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.1ms | Allocations: 7223)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:54:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2076)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6196)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 7228)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:55:12 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2077)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6294)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.1ms | Allocations: 7327)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:55:13 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 650)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4480)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 5315)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:55:15 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4267)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 5048)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 12:55:20 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 421)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4251)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 5032)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 12:55:23 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 445)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4275)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5056)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:57:10 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1754)
+  Rendered layout layouts/application.html.erb (Duration: 224.6ms | Allocations: 20010)
+Completed 200 OK in 226ms (Views: 225.1ms | ActiveRecord: 0.1ms | Allocations: 20343)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:57:45 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1744)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 17753)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.1ms | Allocations: 18086)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 12:59:59 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1760)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 19420)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.1ms | Allocations: 19753)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:02:05 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2099)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 6320)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.2ms | Allocations: 7352)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:03:44 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2246)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6370)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 7402)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:05:08 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2239)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 6363)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms | Allocations: 7395)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:06:19 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3166)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 7290)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.2ms | Allocations: 8323)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:06:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2072)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6206)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.2ms | Allocations: 7238)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:08:20 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1750)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 19486)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.1ms | Allocations: 19820)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:08:45 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2066)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 6190)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 7221)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:09:05 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2080)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6204)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 7236)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:09:27 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2070)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 6230)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms | Allocations: 7263)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:09:41 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2079)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 6268)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms | Allocations: 7301)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:12:06 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1760)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5602)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 5936)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:12:44 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1750)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 19869)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.1ms | Allocations: 20202)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:12:51 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1756)
+  Rendered layout layouts/application.html.erb (Duration: 72.6ms | Allocations: 19877)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.1ms | Allocations: 20210)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:12:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1756)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 18963)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.1ms | Allocations: 19296)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:14:04 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1756)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 19439)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.1ms | Allocations: 19772)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:15:06 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1752)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 19871)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.1ms | Allocations: 20204)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:15:18 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1746)
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 19909)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.1ms | Allocations: 20242)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:15:34 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2081)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6208)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 7239)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:15:52 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2070)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6197)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 7229)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:16:46 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2074)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 6201)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 7233)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:17:14 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 6252)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 6331)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms | Allocations: 7327)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tamplate' for #<ActionView::Base:0x000000000181a0>
+Did you mean?  @tamplates):
+    15: 
+    16:   <table>
+    17:      <tr><th>Имя</th><th>Коэф</th><th>Изменить</th><th>Удалить</th></tr>
+    18:      <tr><td><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></td><td>Ячейка 4</td><td>Ячейка 3</td><td>Ячейка 4</td></tr>
+    19:     </table>
+    20: 
+    21:   <p class="mt">
+  
+app/views/tamplates/index.html.erb:18
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:17:40 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2220)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 6413)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.1ms | Allocations: 7445)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:18:18 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2233)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6363)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 7395)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:18:44 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2322)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 6449)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 7481)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:19:22 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3155)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 7282)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 8314)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:21:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3148)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 7344)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms | Allocations: 8377)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:22:21 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3150)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 7277)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.1ms | Allocations: 8309)
+
+
+Started GET "/tamplates/3" for 127.0.0.1 at 2022-05-05 13:23:01 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 648)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4485)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 5320)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:24:39 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.4ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2719)
+  Rendered layout layouts/application.html.erb (Duration: 83.4ms | Allocations: 20362)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.4ms | Allocations: 20695)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 13:24:44 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4274)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 5056)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 13:24:53 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 433)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4332)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 5113)
+
+
+Started GET "/tamplates/1/edit" for 127.0.0.1 at 2022-05-05 13:24:56 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1252)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5086)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 5921)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:25:37 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2719)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 20398)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.1ms | Allocations: 20731)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:26:14 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2717)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 20931)
+Completed 200 OK in 34ms (Views: 33.9ms | ActiveRecord: 0.1ms | Allocations: 21264)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:26:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2715)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6557)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 6890)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 13:26:27 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4265)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5046)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:26:41 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2709)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 19920)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.1ms | Allocations: 20253)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:27:07 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2713)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 20382)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.1ms | Allocations: 20715)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:27:16 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2725)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 20917)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.1ms | Allocations: 21250)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:27:53 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2713)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 20396)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.1ms | Allocations: 20729)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:28:04 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2713)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 20397)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.1ms | Allocations: 20730)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:28:08 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1158)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5003)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 5397)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:28:18 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 811)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4656)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4997)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:28:36 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 817)
+  Rendered layout layouts/application.html.erb (Duration: 86.7ms | Allocations: 18496)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms | Allocations: 18835)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:28:44 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 18475)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 18813)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:28:55 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2713)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6555)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 6891)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:28:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2721)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 6563)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 6896)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:29:17 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2721)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 20400)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.1ms | Allocations: 20733)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:29:19 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 805)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4647)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 4988)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:29:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2703)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 19898)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.1ms | Allocations: 20232)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:31:08 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2717)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 19943)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.1ms | Allocations: 20276)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:32:49 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2703)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 20387)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.1ms | Allocations: 20720)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:33:03 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2709)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 19919)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.1ms | Allocations: 20252)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:33:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2725)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 20426)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.1ms | Allocations: 20759)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:34:53 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2705)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 20399)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.1ms | Allocations: 20732)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:36:05 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3099)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 7287)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.1ms | Allocations: 8319)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:36:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3226)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 7406)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.1ms | Allocations: 8438)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:37:02 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 20909)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.1ms | Allocations: 21244)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 13:37:28 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 656)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4490)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5324)
+
+
+Started DELETE "/tamplates/1" for 127.0.0.1 at 2022-05-05 13:37:36 +0300
+Processing by TamplatesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTamplate Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tamplates" WHERE "tamplates"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTRANSACTION (97.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 104ms (ActiveRecord: 97.8ms | Allocations: 2287)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:37:36 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2276)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6153)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 6539)
+
+
+Started DELETE "/tamplates/2" for 127.0.0.1 at 2022-05-05 13:37:38 +0300
+Processing by TamplatesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTamplate Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tamplates" WHERE "tamplates"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTRANSACTION (99.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 106ms (ActiveRecord: 100.1ms | Allocations: 2203)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:37:38 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1752)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5600)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 5939)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:37:44 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1194)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5102)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5497)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:39:02 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 801)
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 18478)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 18816)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 13:39:19 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 815)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 18521)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 18859)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-05 13:39:54 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"2432345", "koef"=>"3234", "name"=>"Святополк", "chernovik"=>"Витамин ц", "opisanie"=>"чихает"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.2ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "templ_type", "koef", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Святополк"], ["chernovik", "Витамин ц"], ["opisanie", "чихает"], ["templ_type", 2432345], ["koef", 3234], ["created_at", "2022-05-05 10:39:54.267221"], ["updated_at", "2022-05-05 10:39:54.267221"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (97.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/5
+Completed 302 Found in 103ms (ActiveRecord: 98.0ms | Allocations: 2169)
+
+
+Started GET "/tamplates/5" for 127.0.0.1 at 2022-05-05 13:39:54 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 429)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4263)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 5047)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 13:39:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2262)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6109)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 6445)
+
+

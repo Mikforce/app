@@ -1,9 +1,25 @@
 <div class="container">
-  <h1 class="title-lg mb">МРТ</h1>
+  <h1 class="title-lg mb">МРТ шаблон</h1>
 
-  <% @tamplates.each do |tamplate| %>
-    <p class="mb-sm"><%= link_to "#{tamplate.name}", tamplate_path(tamplate.id) %></p>
-  <% end %>
+<!-- <% @tamplates.each do |tamplate| %>
+    <p>Имя</p>
+    <p class="mb-sm"><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></p>
+    <p>Коэф</p>
+    <p class="mb-sm"><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></p>
+    <p>Изменить</p>
+    <p class="mb-sm"><%= link_to "Изменить",  tamplate_path(tamplate.id), class: 'button button-main' %></p>
+    <p>Удалить</p>
+    <p class="mb-sm"><%= button_to link_to "Удалить",  tamplate_path(tamplate.id), class: 'button button-main', method: :delete %></p>
+
+  <% end %>-->
+
+  <table>
+    <tr><th>Имя</th><th>Коэф</th><th>Изменить</th><th>Удалить</th></tr>
+    <% @tamplates.each do |tamplate| %>
+
+     <tr><td><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></td><td><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></td><td><%= link_to fa_icon('pencil'),  tamplate_path(tamplate.id), class: 'button button-main' %></td><td><%= button_to fa_icon('trash-o'),  tamplate_path(tamplate.id), class: 'button button-main', method: :delete %></td></tr>
+     <% end %>
+    </table>
 
   <p class="mt">
     <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
