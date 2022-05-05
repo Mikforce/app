@@ -6307,3 +6307,720 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1
 ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
   
 app/controllers/tamplates_controller.rb:12:in `update'
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 08:37:49 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 432)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4272)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 5055)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 08:37:49 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 436)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4268)
+Completed 200 OK in 24ms (Views: 16.4ms | ActiveRecord: 0.1ms | Allocations: 5046)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 08:37:50 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 721)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4737)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 5074)
+
+
+Started GET "/tamplates/1" for 127.0.0.1 at 2022-05-05 08:37:52 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 440)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4270)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 5051)
+
+
+Started DELETE "/tamplates/1" for 127.0.0.1 at 2022-05-05 08:37:54 +0300
+Processing by TamplatesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTamplate Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tamplates" WHERE "tamplates"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTRANSACTION (200.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 207ms (ActiveRecord: 201.1ms | Allocations: 2378)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 08:37:54 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 668)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4682)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 5068)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-05 08:37:55 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 435)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4265)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5046)
+
+
+Started DELETE "/tamplates/2" for 127.0.0.1 at 2022-05-05 08:37:56 +0300
+Processing by TamplatesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mTamplate Load (0.4ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTamplate Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tamplates" WHERE "tamplates"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+  [1m[36mTRANSACTION (96.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:18:in `destroy'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 103ms (ActiveRecord: 97.2ms | Allocations: 2189)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 08:37:56 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 633)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4647)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 4987)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 08:37:57 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 847)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4685)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5024)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-05 08:38:06 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"types"=>"1", "koef"=>"12", "name"=>"qweqweqwe", "chernovik"=>"qweqeqwewe", "opisanie"=>"qweqwewqeqweqweq"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 806)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'types' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:6:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 08:47:04 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1217)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 5243)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.4ms | Allocations: 5578)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 08:47:04 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 633)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4651)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 4985)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 08:47:05 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 831)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4669)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5009)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 08:59:46 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1443)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1522)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4307)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    3: 
+    4:   <%= form_with model: @tamplate do |form| %>
+    5:   <p><%= form.label :type, 'Тип' %></p>
+    6:   <p><%= form.number_field :type, :rating, rows: 1 %></p>
+    7: 
+    8:   <p><%= form.label :koef, 'Коф.' %></p>
+    9:   <p><%= form.number_field :koef, :rating,rows: 1 %></p>
+  
+app/views/tamplates/new.html.erb:6
+app/views/tamplates/new.html.erb:4
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 08:59:55 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 918)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 16993)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms | Allocations: 17418)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 08:59:57 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1161)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1461)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    3: 
+    4:   <%= form_with model: @tamplate do |form| %>
+    5:   <p><%= form.label :type, 'Тип' %></p>
+    6:   <p><%= form.number_field :type, :rating, rows: 1 %></p>
+    7: 
+    8:   <p><%= form.label :koef, 'Коф.' %></p>
+    9:   <p><%= form.number_field :koef, :rating,rows: 1 %></p>
+  
+app/views/tamplates/new.html.erb:6
+app/views/tamplates/new.html.erb:4
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 08:59:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 631)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4643)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 4975)
+
+
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 08:59:59 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 664)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4494)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 5913)
+
+
+Started GET "/tamplates/18/edit" for 127.0.0.1 at 2022-05-05 09:00:01 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1330)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1409)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2209)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h2 class="title-lg mb">Редактирование пациента <%= @tamplate.id %> </h2>
+
+  <%= form_with model: @tamplate do |form| %>
+  <p><%= form.label :type, 'Тип' %></p>
+  <p><%= form.number_field :type, :rating, rows: 1 %></p>
+
+  <p><%= form.label :koef, 'Коф.' %></p>
+  <p><%= form.number_field :koef, :rating, rows: 1, %></p>
+
+  <p><%= form.label :name, 'Имя' %></p>
+  <p><%= form.text_area :name, rows: 1, class: 'form-text-area' %></p>
+
+  <p class="mt"><%= form.label :chernovik, 'Чероновик' %></p>
+  <p><%= form.text_area :chernovik, rows: 1, class: 'form-text-field' %></p>
+  <p><%= form.label :opisanie, 'Описание' %></p>
+  <p><%= form.text_area :opisanie, rows: 1, class: 'form-text-field' %></p>
+
+  <p class="mt"><%= form.submit 'Сохранить', class: 'button button-main' %></p>
+  <% end %>
+</div>
+
+):
+1:    <div class="container">
+2:      <h2 class="title-lg mb">Редактирование пациента <%= @tamplate.id %> </h2>
+3:    
+4:      <%= form_with model: @tamplate do |form| %>
+5:      <p><%= form.label :type, 'Тип' %></p>
+6:      <p><%= form.number_field :type, :rating, rows: 1 %></p>
+7:    
+8:      <p><%= form.label :koef, 'Коф.' %></p>
+9:      <p><%= form.number_field :koef, :rating, rows: 1, %></p>
+10:    
+11:      <p><%= form.label :name, 'Имя' %></p>
+12:      <p><%= form.text_area :name, rows: 1, class: 'form-text-area' %></p>
+13:    
+14:      <p class="mt"><%= form.label :chernovik, 'Чероновик' %></p>
+15:      <p><%= form.text_area :chernovik, rows: 1, class: 'form-text-field' %></p>
+16:      <p><%= form.label :opisanie, 'Описание' %></p>
+17:      <p><%= form.text_area :opisanie, rows: 1, class: 'form-text-field' %></p>
+18:    
+19:      <p class="mt"><%= form.submit 'Сохранить', class: 'button button-main' %></p>
+20:      <% end %>
+21:    </div>
+  
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:00:09 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 429)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4269)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5046)
+
+
+Started GET "/tamplates/18/edit" for 127.0.0.1 at 2022-05-05 09:00:34 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1322)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1402)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2844)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h2 class="title-lg mb">Редактирование пациента <%= @tamplate.id %> </h2>
+
+  <%= form_with model: @tamplate do |form| %>
+  <p><%= form.label :type, 'Тип' %></p>
+  <p><%= form.number_field :type, rows: 1 %></p>
+
+  <p><%= form.label :koef, 'Коф.' %></p>
+  <p><%= form.number_field :koef, rows: 1, %></p>
+
+  <p><%= form.label :name, 'Имя' %></p>
+  <p><%= form.text_area :name, rows: 1, class: 'form-text-area' %></p>
+
+  <p class="mt"><%= form.label :chernovik, 'Чероновик' %></p>
+  <p><%= form.text_area :chernovik, rows: 1, class: 'form-text-field' %></p>
+  <p><%= form.label :opisanie, 'Описание' %></p>
+  <p><%= form.text_area :opisanie, rows: 1, class: 'form-text-field' %></p>
+
+  <p class="mt"><%= form.submit 'Сохранить', class: 'button button-main' %></p>
+  <% end %>
+</div>
+
+):
+1:    <div class="container">
+2:      <h2 class="title-lg mb">Редактирование пациента <%= @tamplate.id %> </h2>
+3:    
+4:      <%= form_with model: @tamplate do |form| %>
+5:      <p><%= form.label :type, 'Тип' %></p>
+6:      <p><%= form.number_field :type, rows: 1 %></p>
+7:    
+8:      <p><%= form.label :koef, 'Коф.' %></p>
+9:      <p><%= form.number_field :koef, rows: 1, %></p>
+10:    
+11:      <p><%= form.label :name, 'Имя' %></p>
+12:      <p><%= form.text_area :name, rows: 1, class: 'form-text-area' %></p>
+13:    
+14:      <p class="mt"><%= form.label :chernovik, 'Чероновик' %></p>
+15:      <p><%= form.text_area :chernovik, rows: 1, class: 'form-text-field' %></p>
+16:      <p><%= form.label :opisanie, 'Описание' %></p>
+17:      <p><%= form.text_area :opisanie, rows: 1, class: 'form-text-field' %></p>
+18:    
+19:      <p class="mt"><%= form.submit 'Сохранить', class: 'button button-main' %></p>
+20:      <% end %>
+21:    </div>
+  
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:00:37 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 668)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4788)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 5619)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 09:00:37 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 832)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4864)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5253)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 09:00:39 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 131.3ms | Allocations: 5411)
+  Rendered layout layouts/application.html.erb (Duration: 138.3ms | Allocations: 9249)
+Completed 200 OK in 140ms (Views: 139.1ms | ActiveRecord: 0.0ms | Allocations: 9641)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-05 09:00:48 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"type"=>"123", "koef"=>"123", "name"=>"saddasd", "chernovik"=>"qwqawda", "opisanie"=>"dasdasd"}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 863)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'type' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:6:in `create'
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 09:00:50 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 632)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4652)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 4989)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 09:00:51 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 633)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4643)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 4976)
+
+
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:00:52 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 433)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 4273)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.1ms | Allocations: 5054)
+
+
+Started GET "/tamplates/18/edit" for 127.0.0.1 at 2022-05-05 09:00:53 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1312)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1391)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2135)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h2 class="title-lg mb">Редактирование пациента <%= @tamplate.id %> </h2>
+
+  <%= form_with model: @tamplate do |form| %>
+  <p><%= form.label :type, 'Тип' %></p>
+  <p><%= form.number_field :type, rows: 1 %></p>
+
+  <p><%= form.label :koef, 'Коф.' %></p>
+  <p><%= form.number_field :koef, rows: 1, %></p>
+
+  <p><%= form.label :name, 'Имя' %></p>
+  <p><%= form.text_area :name, rows: 1, class: 'form-text-area' %></p>
+
+  <p class="mt"><%= form.label :chernovik, 'Чероновик' %></p>
+  <p><%= form.text_area :chernovik, rows: 1, class: 'form-text-field' %></p>
+  <p><%= form.label :opisanie, 'Описание' %></p>
+  <p><%= form.text_area :opisanie, rows: 1, class: 'form-text-field' %></p>
+
+  <p class="mt"><%= form.submit 'Сохранить', class: 'button button-main' %></p>
+  <% end %>
+</div>
+
+):
+1:    <div class="container">
+2:      <h2 class="title-lg mb">Редактирование пациента <%= @tamplate.id %> </h2>
+3:    
+4:      <%= form_with model: @tamplate do |form| %>
+5:      <p><%= form.label :type, 'Тип' %></p>
+6:      <p><%= form.number_field :type, rows: 1 %></p>
+7:    
+8:      <p><%= form.label :koef, 'Коф.' %></p>
+9:      <p><%= form.number_field :koef, rows: 1, %></p>
+10:    
+11:      <p><%= form.label :name, 'Имя' %></p>
+12:      <p><%= form.text_area :name, rows: 1, class: 'form-text-area' %></p>
+13:    
+14:      <p class="mt"><%= form.label :chernovik, 'Чероновик' %></p>
+15:      <p><%= form.text_area :chernovik, rows: 1, class: 'form-text-field' %></p>
+16:      <p><%= form.label :opisanie, 'Описание' %></p>
+17:      <p><%= form.text_area :opisanie, rows: 1, class: 'form-text-field' %></p>
+18:    
+19:      <p class="mt"><%= form.submit 'Сохранить', class: 'button button-main' %></p>
+20:      <% end %>
+21:    </div>
+  
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:9: syntax error, unexpected ')'
+app/views/tamplates/edit.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/tamplates/edit.html.erb:24: syntax error, unexpected `end', expecting ')'
+Started GET "/tamplates/18/edit" for 127.0.0.1 at 2022-05-05 09:02:02 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1288)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5410)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 6885)
+
+
+Started PATCH "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:02:06 +0300
+Processing by TamplatesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"type"=>"123", "koef"=>"1231", "name"=>"12321", "chernovik"=>"3123", "opisanie"=>"1231231"}, "commit"=>"Сохранить", "id"=>"18"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1338)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'type' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:12:in `update'
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:02:09 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4492)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5329)
+
+
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:02:09 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 433)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4271)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5049)
+
+
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:02:21 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 427)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4257)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 5035)
+
+
+Started GET "/tamplates/18/edit" for 127.0.0.1 at 2022-05-05 09:02:23 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 870)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4700)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 5481)
+
+
+Started PATCH "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:02:28 +0300
+Processing by TamplatesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"type"=>"34", "koef"=>"123", "name"=>"12321", "chernovik"=>"3123", "opisanie"=>"1231231"}, "commit"=>"Сохранить", "id"=>"18"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1339)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'type' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:12:in `update'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:04:48 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 17.2ms | Allocations: 1215)
+  Rendered layout layouts/application.html.erb (Duration: 125.1ms | Allocations: 42544)
+Completed 200 OK in 148ms (Views: 128.1ms | ActiveRecord: 0.7ms | Allocations: 55741)
+
+
+Started GET "/tamplates/18" for 127.0.0.1 at 2022-05-05 09:04:49 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:45:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4262)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5040)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-05 09:04:52 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 904)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4915)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 5317)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-05 09:04:53 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2271)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6111)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 6537)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-05 09:05:07 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"type"=>"12345", "koef"=>"1234", "name"=>"qweq vq", "chernovik"=>"qwdwvqd q dwq", "opisanie"=>"dwq dw qw "}, "commit"=>"Создать"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 963)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'type' for Tamplate.):
+  
+app/controllers/tamplates_controller.rb:6:in `create'

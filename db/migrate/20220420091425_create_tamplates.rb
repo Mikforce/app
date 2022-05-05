@@ -4,7 +4,7 @@ class CreateTamplates < ActiveRecord::Migration[7.0]
       t.text :name
       t.text :chernovik
       t.text :opisanie
-      t.int :types
+      t.int :type
       t.int :koef
 
       t.timestamps
