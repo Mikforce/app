@@ -4,10 +4,12 @@ class TamplatesController < ApplicationController
   def create
 
     tamplate = Tamplate.create(tamplate_params)
-
-    redirect_to tamplate_path(tamplate)
+    if tamplate.save
+      redirect_to tamplate_path(tamplate)
+    else
+      render 'new'
   end
-
+  end
   def update
     @tamplate.update(tamplate_params)
 

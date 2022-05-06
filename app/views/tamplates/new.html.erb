@@ -1,7 +1,22 @@
 <div class="container">
   <h2 class="title-lg mb">Новый шаблон</h2>
 
+  <% if @tamplate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tamplate.errors.count, "error") %> prohibited this article from being saved:</h2>
+      <ul>
+        <% @tamplate.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
   <%= form_with model: @tamplate do |form| %>
+
+
   <p><%= form.label :templ_type, 'Тип' %></p>
   <p><%= form.number_field :templ_type %></p>
 
@@ -10,7 +25,7 @@
 
 
   <p><%= form.label :name, 'Имя' %></p>
-  <p><%= form.text_area :name_confirmation, rows: 1 %></p>
+  <p><%= form.text_area :name, rows: 2 %></p>
 
   <p class="mb"><%= form.label :chernovik, 'Чероновик' %></p>
   <p><%= form.text_area :chernovik, rows: 5, class: 'form-text-area' %></p>
