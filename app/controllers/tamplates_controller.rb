@@ -7,7 +7,7 @@ class TamplatesController < ApplicationController
     if tamplate.save
       redirect_to tamplate_path(tamplate)
     else
-      redirect_to tamplates_path
+      
   end
   end
 

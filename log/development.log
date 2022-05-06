@@ -17092,3 +17092,443 @@ Processing by TamplatesController#index as HTML
 Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.1ms | Allocations: 9158)
 
 
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-06 13:35:30 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 869)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4767)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5119)
+
+
+Started GET "/tamplates/4/edit" for 127.0.0.1 at 2022-05-06 13:35:34 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:48:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 868)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4702)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 6073)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-06 13:35:55 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 818)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4717)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5058)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:36:08 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"345", "koef"=>"345", "name"=>"ываыв", "chernovik"=>"ываыва", "opisanie"=>""}, "commit"=>"Создать"}
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1656)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-06 13:36:08 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4991)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 8839)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 9179)
+
+
+Started GET "/tamplates/4/edit" for 127.0.0.1 at 2022-05-06 13:42:58 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tamplates_controller.rb:48:in `set_tamplate'
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:48:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 855)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4689)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.4ms | Allocations: 5977)
+
+
+Started GET "/tamplates/4/edit" for 127.0.0.1 at 2022-05-06 13:43:58 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:48:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1334)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5450)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 6926)
+
+
+Started GET "/tamplates/4/edit" for 127.0.0.1 at 2022-05-06 13:44:08 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:48:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1271)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5387)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 6864)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-06 13:45:03 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 5465)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9588)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 10623)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-06 13:45:06 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1344)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 5186)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5581)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:45:09 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1562)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-06 13:45:09 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4987)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 8829)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.1ms | Allocations: 9215)
+
+
+Started DELETE "/tamplates/31" for 127.0.0.1 at 2022-05-06 13:45:35 +0300
+Processing by TamplatesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"31"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:48:in `set_tamplate'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:21:in `destroy'
+  [1m[36mTamplate Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tamplates" WHERE "tamplates"."id" = ?[0m  [["id", 31]]
+  ↳ app/controllers/tamplates_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (91.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:21:in `destroy'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 97ms (ActiveRecord: 91.7ms | Allocations: 2228)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-06 13:45:35 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4904)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 9027)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms | Allocations: 10111)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-06 13:46:13 +0300
+Processing by TamplatesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tamplates_controller.rb:34:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1369)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 17066)
+Completed 200 OK in 27ms (Views: 18.8ms | ActiveRecord: 0.8ms | Allocations: 21418)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:46:14 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 1778)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-06 13:46:14 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5147)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 8989)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 9367)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:14 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 7673)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 23313)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.9ms | Allocations: 25130)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-06 13:47:16 +0300
+Processing by TamplatesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4752)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 5103)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:18 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 1912)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:19 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1544)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:19 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 0.0ms | Allocations: 1536)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:19 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1544)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:20 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1538)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:20 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1542)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:20 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1536)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:20 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1540)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:20 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1546)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:20 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 1542)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:20 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1544)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:21 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 1542)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:21 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:21 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1534)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:22 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1538)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:23 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1544)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:27 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1446)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1450)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1450)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1460)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1454)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1446)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1456)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:29 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"цйукцу", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1450)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:42 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"чунгачкук", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1456)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:42 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"чунгачкук", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1456)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:42 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"чунгачкук", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1448)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:42 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"чунгачкук", "chernovik"=>"ыаываы", "opisanie"=>""}, "commit"=>"Создать"}
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1448)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:44 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"23423", "koef"=>"2342", "name"=>"чунгачкук", "chernovik"=>"ыаываы", "opisanie"=>"выаы"}, "commit"=>"Создать"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTamplate Create (0.4ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "templ_type", "koef", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "чунгачкук"], ["chernovik", "ыаываы"], ["opisanie", "выаы"], ["templ_type", 23423], ["koef", 2342], ["created_at", "2022-05-06 10:47:44.452475"], ["updated_at", "2022-05-06 10:47:44.452475"]]
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (124.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:6:in `create'
+Redirected to http://localhost:3000/tamplates/32
+Completed 302 Found in 133ms (ActiveRecord: 125.3ms | Allocations: 2360)
+
+
+Started GET "/tamplates/32" for 127.0.0.1 at 2022-05-06 13:47:44 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"32"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:48:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 799)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4696)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 6122)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-06 13:47:47 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4999)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8841)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms | Allocations: 9177)
+
+
