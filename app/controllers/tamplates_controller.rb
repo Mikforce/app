@@ -7,9 +7,10 @@ class TamplatesController < ApplicationController
     if tamplate.save
       redirect_to tamplate_path(tamplate)
     else
-      render 'new'
+      redirect_to tamplates_path
   end
   end
+
   def update
     @tamplate.update(tamplate_params)
 
