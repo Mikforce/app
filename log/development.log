@@ -21606,3 +21606,63 @@ Started GET "/users/sign_out" for 127.0.0.1 at 2022-05-12 13:12:46 +0300
   
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
   
+Started GET "/users/sign_out" for 127.0.0.1 at 2022-05-12 13:18:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-12 13:18:58 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2362)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 11815)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.6ms | Allocations: 12787)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy_member_session_path' for #<ActionView::Base:0x00000000040c90>
+Did you mean?  destroy_user_session_path
+               destroy_session_path):
+    19:     <ul class='mr'>
+    20:       <% if user_signed_in? %>
+    21:         <li class="nav-item">
+    22:           <%= link_to :logout, destroy_member_session_path, method: :delete %>
+    23:         </li>
+    24:           <% else %>
+    25:           <li class="nav-item">
+  
+app/views/layouts/application.html.erb:22
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-12 13:19:16 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1770)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6868)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 7920)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-12 13:28:27 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1898)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6506)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 6840)
+
+
