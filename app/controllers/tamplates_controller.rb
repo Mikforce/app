@@ -1,4 +1,5 @@
 class TamplatesController < ApplicationController
+  #before_action :authentificate_user, exept: [:index, :show]
   before_action :set_tamplate, only: %i[update show destroy edit]
 
   def create
@@ -7,7 +8,7 @@ class TamplatesController < ApplicationController
     if tamplate.save
       redirect_to tamplate_path(tamplate)
     else
-      
+
   end
   end
 
