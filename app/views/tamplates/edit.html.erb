@@ -2,7 +2,7 @@
   <h2 class="title-lg mb">Редактирование шаблона<%= @tamplate.id %> </h2>
 
   <%= form_with model: @tamplate do |form| %>
-  <p><%= form.label :templ_type, 'Тип' %></p>  
+  <p><%= form.label :templ_type, 'Тип' %></p>
   <p><%= form.number_field :templ_type %></p>
 
   <p><%= form.label :koef, 'Коф.' %></p>
@@ -13,6 +13,7 @@
 
   <p class="mt"><%= form.label :chernovik, 'Чероновик' %></p>
   <p><%= form.text_area :chernovik, rows: 10, class: 'form-text-field' %></p>
+
   <p><%= form.label :opisanie, 'Описание' %></p>
   <p><%= form.text_area :opisanie, rows: 10, class: 'form-text-field' %></p>
 

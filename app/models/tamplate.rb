@@ -4,5 +4,6 @@ class Tamplate < ApplicationRecord
   validates :name,presence: true, length: { minimum: 2 }
   validates :chernovik,presence: true, length: { minimum: 2 }
   validates :opisanie,presence: true, length: { minimum: 2 }
-
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'your-site-url'}
 end
