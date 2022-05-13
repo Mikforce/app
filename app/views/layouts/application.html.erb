@@ -19,9 +19,7 @@
     <ul class='mr'>
       <% if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to 'Выход', destroy_user_session_path, method: :delete, form: { "data-turbo" => "false" } do %>
-          <i class="zmdi zmdi-power"></i>Logout
-          <% end %>
+          <%= link_to 'Выход', destroy_user_session_path, method: :delete, class: 'nav-link' %>
         </li>
           <% else %>
           <li class="nav-item">
