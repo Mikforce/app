@@ -5,6 +5,15 @@ Rails.application.routes.draw do
 
   resources :tamplates
 
+
+  devise_scope :user do
+    get "login", :to => "devise/sessions#new"
+    get "register", :to => "devise/registrations#new"
+    get "settings", :to => "devise/registrations#edit"
+    get "logout",   :to => "devise/sessions#destroy"
+
+ end
+
   #devise_for :users do
     #get '/users/sign_out' => 'devise/sessions#destroy'
   #end
