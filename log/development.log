@@ -30877,3 +30877,49 @@ puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.4) lib/puma/server.rb:441:in `process_client'
 puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-16 12:16:48 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 144)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1282)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5506)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 6194)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-16 12:16:48 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 144)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1282)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5409)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 6078)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-16 12:16:54 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2660)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 6902)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.6ms | Allocations: 7772)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-16 12:57:53 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:4
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2661)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 7294)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.6ms | Allocations: 8343)
+
+
