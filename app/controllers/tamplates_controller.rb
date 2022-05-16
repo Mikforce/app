@@ -55,4 +55,6 @@ class TamplatesController < ApplicationController
     @tamplate = Tamplate.find(params[:id])
   end
 
+
+
 end
