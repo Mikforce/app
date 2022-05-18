@@ -6,14 +6,10 @@
      <tr><th>Имя</th><th>Тип</th><th>Коэф</th><th>Описание</th><th>Черновик</th></tr>
      <tr><td><p class="mb-sm"><%= @tamplate.name %></p></td><td><p class="mb-sm"><%= @tamplate.templ_type %></p></td><td><p class="mb-sm"><%= @tamplate.koef %></p></td><td><p class="mb-sm"><%= @tamplate.opisanie %></p></td><td><p class="mb-sm"><%= @tamplate.chernovik %></p></td></tr>
   </table>
-  <!--<p class="mb-sm"><%= @tamplate.name %></p>
-  <p class="mb-sm"><%= @tamplate.templ_type %></p>
-  <p class="mb-sm"><%= @tamplate.koef %></p>
-  <p class="mb-sm"><%= @tamplate.opisanie %></p>
-  <p class="mb-sm"><%= @tamplate.chernovik %></p>-->
+
   <div class="mt">
-    <%= link_to fa_icon('pencil'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
-    <%= button_to fa_icon('trash-o'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
+    <%= link_to ('Редатировать'), edit_tamplate_path(@tamplate), title: 'Изменить шаблон'%>
+    <%= button_to ('Удалить'), tamplate_path(@tamplate), method: :delete, title: 'Удалить шаблон' %>
   </div>
 
   <p class="mt"><%= link_to "Все шаблоны", "/tamplates" %></p>

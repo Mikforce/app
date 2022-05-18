@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users, controllers: { applications: 'applications' }, controllers: {registrations: 'registrations'}
-  root to: 'tamplates#index'
+  root to: 'tamplates#base'
 
   resources :tamplates
 
