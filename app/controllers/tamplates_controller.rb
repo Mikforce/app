@@ -1,6 +1,7 @@
 class TamplatesController < ApplicationController
-  #before_action :authentificate_user, exept: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_tamplate, only: %i[update show destroy edit]
+
 
   def create
 
@@ -41,7 +42,7 @@ class TamplatesController < ApplicationController
   end
 
   def base
-    end
+  end
 
 
 
