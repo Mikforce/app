@@ -15,3 +15,9 @@ outline-width: 0;
   box-sizing: border-box;
   width: 100%;
 }
+
+
+.form-group {
+  border: 1px solid #000000;
+  padding: 7.5px 10px;
+}
