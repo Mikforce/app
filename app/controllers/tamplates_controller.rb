@@ -25,6 +25,7 @@ class TamplatesController < ApplicationController
   end
 
   def show
+    @tamplates = Tamplate.all
   end
 
   def index
@@ -40,8 +41,7 @@ class TamplatesController < ApplicationController
   end
 
   def base
-    @tamplates = Tamplate.all
-  end
+    end
 
 
 
