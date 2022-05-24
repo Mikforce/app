@@ -5,17 +5,31 @@
     <div class="container">
       <h1 class="title-lg mb">МРТ шаблон</h1>
       <table class="table table-sm table-inverse">
-        <tr><th>id</th><th>Имя</th><th>Тип</th><th>Коэф</th><th>Изменить</th><th>Удалить</th></tr>
+        <tr>
+          <th>id</th>
+          <th>Имя</th>
+          <th>Тип</th>
+          <th>Коэф</th>
+          <th>Изменить</th>
+          <th>Удалить</th>
+        </tr>
         <% @tamplates.each do |tamplate| %>
 
-         <tr><td><%= link_to "#{tamplate.id}",  tamplate_path(tamplate.id) %></td><td><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></td><td><%= link_to "#{tamplate.templ_type}",  tamplate_path(tamplate.id) %></td><td><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></td><td><%= link_to ('Редактировать'),  edit_tamplate_path(tamplate.id), class: 'button button-main' %></td><td><%= button_to ('Удалить'),  tamplate_path(tamplate.id), class: 'button button-main', method: :delete %></td></tr>
+         <tr>
+           <td><%= link_to "#{tamplate.id}",  tamplate_path(tamplate.id) %></td>
+           <td><%= link_to "#{tamplate.name}",  tamplate_path(tamplate.id) %></td>
+           <td><%= link_to "#{tamplate.templ_type}",  tamplate_path(tamplate.id) %></td>
+           <td><%= link_to "#{tamplate.koef}",  tamplate_path(tamplate.id) %></td>
+           <td><%= link_to ('Редактировать'),  edit_tamplate_path(tamplate.id), class: 'button button-main' %></td>
+           <td><%= button_to ('Удалить'),  tamplate_path(tamplate.id), class: 'button button-main', method: :delete %></td>
+         </tr>
 
 
 
          <% end %>
          <p class="mt">
            <%= link_to "Новый шаблон", new_tamplate_path, class: 'button button-main' %>
-           
+
          </p>
     </div>
 

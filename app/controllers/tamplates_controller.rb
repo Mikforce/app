@@ -7,7 +7,7 @@ class TamplatesController < ApplicationController
 
     tamplate = Tamplate.create(tamplate_params)
     if tamplate.save
-      redirect_to tamplate_path(tamplate)
+      redirect_to tamplates_path
     else
 
   end
@@ -16,7 +16,7 @@ class TamplatesController < ApplicationController
   def update
     @tamplate.update(tamplate_params)
 
-    redirect_to tamplate_path(@tamplate)
+    redirect_to tamplates_path
   end
 
   def destroy

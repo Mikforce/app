@@ -56516,3 +56516,1413 @@ Processing by TamplatesController#index as HTML
 Completed 200 OK in 809ms (Views: 807.8ms | ActiveRecord: 0.4ms | Allocations: 9403)
 
 
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:48:12 +0300
+  [1m[35m (32.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (18.8ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 33.7ms | Allocations: 1331)
+  [1m[36mUser Load (40.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 6278.4ms | Allocations: 71649)
+Completed 200 OK in 6749ms (Views: 6337.1ms | ActiveRecord: 67.0ms | Allocations: 86045)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-24 10:48:27 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.5ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 147.7ms | Allocations: 2248)
+  Rendered layout layouts/application.html.erb (Duration: 153.3ms | Allocations: 4612)
+Completed 200 OK in 242ms (Views: 154.3ms | ActiveRecord: 1.0ms | Allocations: 9631)
+
+
+Started PATCH "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:48:30 +0300
+Processing by TamplatesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"1232", "koef"=>"12312", "name"=>"fcsaac", "chernovik"=>"ascasfasc", "opisanie"=>"cascascacs"}, "commit"=>"Сохранить", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+Redirected to http://localhost:3000/tamplates/2
+Completed 302 Found in 33ms (ActiveRecord: 0.3ms | Allocations: 2670)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:48:30 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 527)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3578)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 4429)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:48:46 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 559)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 20221)
+Completed 200 OK in 109ms (Views: 70.8ms | ActiveRecord: 3.4ms | Allocations: 25349)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-24 10:48:49 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1065)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3429)
+Completed 200 OK in 25ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 8225)
+
+
+Started PATCH "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:48:52 +0300
+Processing by TamplatesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"1232", "koef"=>"12312", "name"=>"fcsaac", "chernovik"=>"ascasfascsdaf", "opisanie"=>"cascascacs"}, "commit"=>"Сохранить", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:17:in `update'
+  [1m[36mTamplate Update (0.4ms)[0m  [1m[33mUPDATE "tamplates" SET "chernovik" = ?, "updated_at" = ? WHERE "tamplates"."id" = ?[0m  [["chernovik", "ascasfascsdaf"], ["updated_at", "2022-05-24 07:48:52.216838"], ["id", 2]]
+  ↳ app/controllers/tamplates_controller.rb:17:in `update'
+  [1m[36mTRANSACTION (134.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:17:in `update'
+Redirected to http://localhost:3000/tamplates/2
+Completed 302 Found in 147ms (ActiveRecord: 134.9ms | Allocations: 4541)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:48:52 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 501)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3544)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 4343)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:48:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.4ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1918)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4969)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.5ms | Allocations: 5360)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-24 10:48:59 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1013)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3375)
+Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 5277)
+
+
+Started PATCH "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:49:00 +0300
+Processing by TamplatesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"1232", "koef"=>"12312", "name"=>"fcsaac", "chernovik"=>"ascasfascsdaf", "opisanie"=>"cascascacs"}, "commit"=>"Сохранить", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+Redirected to http://localhost:3000/tamplates/2
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 2078)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:49:00 +0300
+Processing by TamplatesController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 503)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3546)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 4347)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:50:33 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 39.8ms | Allocations: 4212)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 133.6ms | Allocations: 23969)
+Completed 200 OK in 179ms (Views: 135.8ms | ActiveRecord: 3.2ms | Allocations: 25603)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-24 10:50:36 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1069)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3432)
+Completed 200 OK in 46ms (Views: 9.1ms | ActiveRecord: 0.5ms | Allocations: 8827)
+
+
+Started PATCH "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:50:39 +0300
+Processing by TamplatesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"1232", "koef"=>"12312", "name"=>"fcsaac", "chernovik"=>"ascasfascsdafasas", "opisanie"=>"cascascacs"}, "commit"=>"Сохранить", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:17:in `update'
+  [1m[36mTamplate Update (0.5ms)[0m  [1m[33mUPDATE "tamplates" SET "chernovik" = ?, "updated_at" = ? WHERE "tamplates"."id" = ?[0m  [["chernovik", "ascasfascsdafasas"], ["updated_at", "2022-05-24 07:50:39.594292"], ["id", 2]]
+  ↳ app/controllers/tamplates_controller.rb:17:in `update'
+  [1m[36mTRANSACTION (138.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:17:in `update'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 176ms (ActiveRecord: 139.3ms | Allocations: 3842)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:50:39 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1570)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 4627)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.3ms | Allocations: 4968)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:50:44 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 44.8ms | Allocations: 1428)
+  Rendered layout layouts/application.html.erb (Duration: 75.2ms | Allocations: 3798)
+Completed 200 OK in 81ms (Views: 76.3ms | ActiveRecord: 0.2ms | Allocations: 5336)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:50:51 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"12312", "koef"=>"123123", "name"=>"wddfsdv", "chernovik"=>"sdvsdvv sdfsd", "opisanie"=>"fsdcvsdv"}, "commit"=>"Создать"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:8:in `create'
+  [1m[36mTamplate Create (0.7ms)[0m  [1m[32mINSERT INTO "tamplates" ("name", "chernovik", "opisanie", "templ_type", "koef", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "wddfsdv"], ["chernovik", "sdvsdvv sdfsd"], ["opisanie", "fsdcvsdv"], ["templ_type", 12312], ["koef", 123123], ["created_at", "2022-05-24 07:50:51.599249"], ["updated_at", "2022-05-24 07:50:51.599249"]]
+  ↳ app/controllers/tamplates_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (102.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:8:in `create'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 115ms (ActiveRecord: 102.9ms | Allocations: 3385)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:50:51 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1979)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 5030)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 5370)
+
+
+Started GET "/logout" for 127.0.0.1 at 2022-05-24 10:50:56 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 227ms (ActiveRecord: 0.2ms | Allocations: 3431)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 10:50:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1976)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4450)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 4787)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 10:50:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 15.1ms | Allocations: 878)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 235.8ms | Allocations: 3466)
+  Rendered layout layouts/application.html.erb (Duration: 241.6ms | Allocations: 5976)
+Completed 200 OK in 328ms (Views: 269.2ms | ActiveRecord: 0.0ms | Allocations: 7655)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 10:51:00 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mikforce@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mikforce@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 1665ms (ActiveRecord: 0.4ms | Allocations: 4417)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 10:51:02 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.7ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1973)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 5024)
+Completed 200 OK in 42ms (Views: 15.9ms | ActiveRecord: 0.9ms | Allocations: 5365)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:51:42 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 519)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3562)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 4358)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:51:50 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1983)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 5034)
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 5371)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:51:52 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 931)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3301)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 4765)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:52:45 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1499)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4359)
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 0.2ms | Allocations: 6550)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:52:47 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2282)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 5333)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.4ms | Allocations: 5724)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:52:48 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3321)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 4791)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:53:16 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 23.0ms | Allocations: 5899)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 5978)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.3ms | Allocations: 8143)
+
+
+  
+ActionView::Template::Error (undefined method `to' for #<ActionView::Base:0x00000000018c68>
+Did you mean?  t):
+    34:   <p class="mb"><%= form.submit 'Создать', class: 'button button-main' %></p>
+    35: 
+    36:   <% end %>
+    37:   <p class="mt"><%= baton to "Все шаблоны", "/tamplates" %></p>
+    38: </div>
+  
+app/views/tamplates/new.html.erb:37
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:53:24 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 21.2ms | Allocations: 5578)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 5657)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms | Allocations: 7809)
+
+
+  
+ActionView::Template::Error (undefined method `baton_to' for #<ActionView::Base:0x000000000190a0>):
+    34:   <p class="mb"><%= form.submit 'Создать', class: 'button button-main' %></p>
+    35: 
+    36:   <% end %>
+    37:   <p class="mt"><%= baton_to "Все шаблоны", "/tamplates" %></p>
+    38: </div>
+  
+app/views/tamplates/new.html.erb:37
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:53:46 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 22.8ms | Allocations: 5603)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 5682)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.2ms | Allocations: 7843)
+
+
+  
+ActionView::Template::Error (undefined method `batton_to' for #<ActionView::Base:0x000000000193e8>
+Did you mean?  button_to
+               button_tag):
+    34:   <p class="mb"><%= form.submit 'Создать', class: 'button button-main' %></p>
+    35: 
+    36:   <% end %>
+    37:   <p class="mt"><%= batton_to "Все шаблоны", "/tamplates" %></p>
+    38: </div>
+  
+app/views/tamplates/new.html.erb:37
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:54:25 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1641)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4514)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 6700)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:54:28 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.2ms | Allocations: 1690)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: tamplate):
+  
+app/controllers/tamplates_controller.rb:57:in `tamplate_params'
+app/controllers/tamplates_controller.rb:8:in `create'
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:54:28 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1089)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3472)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.8ms | Allocations: 4929)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:54:30 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.2ms | Allocations: 1677)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: tamplate):
+  
+app/controllers/tamplates_controller.rb:57:in `tamplate_params'
+app/controllers/tamplates_controller.rb:8:in `create'
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:54:30 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1089)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3472)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 4930)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:55:04 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1651)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 4511)
+Completed 200 OK in 53ms (Views: 42.0ms | ActiveRecord: 0.2ms | Allocations: 6681)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:55:06 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.2ms | Allocations: 1690)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: tamplate):
+  
+app/controllers/tamplates_controller.rb:57:in `tamplate_params'
+app/controllers/tamplates_controller.rb:8:in `create'
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:55:06 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1099)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3482)
+Completed 200 OK in 17ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 4953)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:55:50 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 1650)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4510)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.2ms | Allocations: 6682)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:55:52 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms | Allocations: 2833)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:55:53 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms | Allocations: 2544)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:55:53 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.2ms | Allocations: 2540)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:55:53 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms | Allocations: 2537)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:56:41 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1655)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 4528)
+Completed 200 OK in 46ms (Views: 40.2ms | ActiveRecord: 0.3ms | Allocations: 6710)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:56:43 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms | Allocations: 2790)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:56:43 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms | Allocations: 2544)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:56:44 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms | Allocations: 2548)
+
+
+Started POST "/tamplates" for 127.0.0.1 at 2022-05-24 10:57:45 +0300
+Processing by TamplatesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tamplate"=>{"templ_type"=>"", "koef"=>"", "name"=>"", "chernovik"=>"", "opisanie"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+No template found for TamplatesController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms | Allocations: 2545)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 10:57:49 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2287)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 5351)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.4ms | Allocations: 5739)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:57:53 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 792)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3835)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 4684)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:58:17 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 813)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4344)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.4ms | Allocations: 5853)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:58:19 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2269)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 5320)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.4ms | Allocations: 5711)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:58:21 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 505)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3548)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 4344)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 10:58:22 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 519)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3562)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 4355)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:58:24 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1973)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 5024)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.4ms | Allocations: 5361)
+
+
+Started GET "/tamplates/3/edit" for 127.0.0.1 at 2022-05-24 10:58:25 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.1ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1401)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3763)
+Completed 200 OK in 20ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 5720)
+
+
+Started GET "/tamplates/3/edit" for 127.0.0.1 at 2022-05-24 10:58:49 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1469)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4321)
+Completed 200 OK in 46ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 6934)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:58:51 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2276)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 5327)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.4ms | Allocations: 5718)
+
+
+Started GET "/tamplates/new" for 127.0.0.1 at 2022-05-24 10:58:54 +0300
+Processing by TamplatesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/new.html.erb within layouts/application
+  Rendered tamplates/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1439)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3809)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 5336)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 10:58:56 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:9
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1982)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5033)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 5371)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 11:01:01 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2325)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 5864)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.4ms | Allocations: 6914)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 11:01:28 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2333)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 5885)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.4ms | Allocations: 6936)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 11:05:14 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2340)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 5879)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.4ms | Allocations: 6930)
+
+
+Started GET "/logout" for 127.0.0.1 at 2022-05-24 11:05:15 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 1492)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:05:15 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1969)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4404)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 4742)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-05-24 11:05:16 +0300
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 18.9ms | Allocations: 234)
+  Rendered devise/shared/_links.html.erb (Duration: 4.3ms | Allocations: 791)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 31.3ms | Allocations: 2916)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 5441)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 6950)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-05-24 11:05:51 +0300
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.0ms | Allocations: 229)
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 665)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2622)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 5538)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 7066)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:06:01 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1424)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3928)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 5132)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:06:45 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1937)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 4858)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 6296)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:06:51 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 144)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1008)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3421)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 4077)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:07:23 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1948)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4856)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 6283)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:07:31 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 12.0ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 1947)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 4855)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 6295)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:07:34 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mikforce@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mikforce@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 606ms (ActiveRecord: 0.2ms | Allocations: 2368)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:07:35 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2343)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 5478)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.4ms | Allocations: 6403)
+
+
+Started GET "/logout" for 127.0.0.1 at 2022-05-24 11:07:38 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 1466)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:07:38 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1975)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 4410)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms | Allocations: 4748)
+
+
+Started GET "/tamplates/2" for 127.0.0.1 at 2022-05-24 11:07:39 +0300
+Processing by TamplatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/show.html.erb within layouts/application
+  Rendered tamplates/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 796)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3215)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 4064)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-24 11:07:44 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 262)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:07:44 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 144)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1008)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3423)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 4100)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:07:56 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mikforce@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mikforce@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/tamplates/2/edit
+Completed 302 Found in 695ms (ActiveRecord: 0.2ms | Allocations: 2151)
+
+
+Started GET "/tamplates/2/edit" for 127.0.0.1 at 2022-05-24 11:07:56 +0300
+Processing by TamplatesController#edit as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1446)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3808)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 5757)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 11:07:59 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1987)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 5038)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.4ms | Allocations: 5379)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 11:09:59 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 32.7ms | Allocations: 2342)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 5884)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.4ms | Allocations: 6934)
+
+
+Started GET "/logout" for 127.0.0.1 at 2022-05-24 11:10:03 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.2ms | Allocations: 1485)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:10:03 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1983)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 4431)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 4769)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:10:20 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2334)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 5251)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 6301)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:10:37 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2344)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 5261)
+Completed 200 OK in 52ms (Views: 24.7ms | ActiveRecord: 0.2ms | Allocations: 6312)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:10:48 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.4ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2342)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 5270)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.4ms | Allocations: 6322)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:11:43 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2328)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 5248)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.2ms | Allocations: 6303)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:13:52 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2340)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 5263)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.3ms | Allocations: 6314)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:13:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1945)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 4462)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms | Allocations: 5718)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:14:01 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mikforce@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mikforce@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 702ms (ActiveRecord: 0.2ms | Allocations: 2377)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:14:02 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1977)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5033)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 5422)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:14:20 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 32.5ms | Allocations: 2348)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 5894)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.4ms | Allocations: 6944)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:14:27 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2336)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 5879)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.4ms | Allocations: 6930)
+
+
+Started GET "/logout" for 127.0.0.1 at 2022-05-24 11:14:37 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 1490)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:14:38 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1983)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4418)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 4756)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:14:49 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1945)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4449)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 5707)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:14:51 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mikforce@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mikforce@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 697ms (ActiveRecord: 0.2ms | Allocations: 2366)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:14:52 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1971)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 5022)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.4ms | Allocations: 5410)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:16:31 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.3ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2334)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 5874)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.4ms | Allocations: 6924)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:17:02 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2338)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 5878)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.5ms | Allocations: 6930)
+
+
+Started GET "/logout" for 127.0.0.1 at 2022-05-24 11:17:05 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms | Allocations: 1472)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:17:05 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1981)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4416)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 4754)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:17:07 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1946)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 4454)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 5712)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:17:09 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mikforce@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mikforce@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 704ms (ActiveRecord: 0.2ms | Allocations: 2376)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:17:10 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1971)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 5022)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.4ms | Allocations: 5410)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:17:16 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2342)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 5885)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.4ms | Allocations: 6936)
+
+
+Started GET "/logout" for 127.0.0.1 at 2022-05-24 11:18:55 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 1488)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:18:55 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1975)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4423)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 4761)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:18:57 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1948)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4455)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 5722)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:18:59 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"12123312421@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "12123312421@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 698ms (ActiveRecord: 0.2ms | Allocations: 1361)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:19:03 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"12123312421@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "12123312421@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 684ms (ActiveRecord: 0.2ms | Allocations: 1355)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:19:05 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"12123312421@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "12123312421@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 697ms (ActiveRecord: 0.2ms | Allocations: 1353)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-05-24 11:19:10 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mikforce@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Авторизоваться"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mikforce@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 697ms (ActiveRecord: 0.2ms | Allocations: 2371)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-24 11:19:11 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1983)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 5038)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 5426)
+
+
+Started DELETE "/tamplates/4" for 127.0.0.1 at 2022-05-24 11:19:13 +0300
+Processing by TamplatesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.4ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:23:in `destroy'
+  [1m[36mTamplate Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tamplates" WHERE "tamplates"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/tamplates_controller.rb:23:in `destroy'
+  [1m[36mTRANSACTION (133.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tamplates_controller.rb:23:in `destroy'
+Redirected to http://localhost:3000/tamplates
+Completed 302 Found in 144ms (ActiveRecord: 134.0ms | Allocations: 3239)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 11:19:13 +0300
+Processing by TamplatesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1558)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4609)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 4949)
+
+
+Started GET "/tamplates/3/edit" for 127.0.0.1 at 2022-05-24 11:19:15 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1441)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3803)
+Completed 200 OK in 21ms (Views: 12.7ms | ActiveRecord: 0.4ms | Allocations: 5754)
+
+
+Started GET "/tamplates/3/edit" for 127.0.0.1 at 2022-05-24 11:19:32 +0300
+Processing by TamplatesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates" WHERE "tamplates"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tamplates_controller.rb:61:in `set_tamplate'
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/edit.html.erb within layouts/application
+  Rendered tamplates/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1303)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4159)
+Completed 200 OK in 23ms (Views: 14.6ms | ActiveRecord: 0.4ms | Allocations: 6780)
+
+
+Started GET "/tamplates" for 127.0.0.1 at 2022-05-24 11:19:36 +0300
+Processing by TamplatesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tamplates/index.html.erb within layouts/application
+  [1m[36mTamplate Load (0.2ms)[0m  [1m[34mSELECT "tamplates".* FROM "tamplates"[0m
+  ↳ app/views/tamplates/index.html.erb:16
+  Rendered tamplates/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1903)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4954)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms | Allocations: 5345)
+
+
